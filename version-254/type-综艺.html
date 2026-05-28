@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>综艺 - 分类浏览</title>
+  <meta name="description" content="按类型浏览：综艺，共 21 部。">
+  <meta name="theme-color" content="#1d4ed8">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/base.css">
+  <link rel="stylesheet" href="assets/site.css">
+</head>
+<body class="min-h-screen bg-slate-50 text-slate-900 antialiased">
+  <header class="sticky top-0 z-50 border-b border-white/70 bg-white/90 backdrop-blur-xl shadow-sm">
+    <div class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-4 sm:px-6 lg:px-8">
+      <a href="index.html" class="flex items-center gap-3">
+        <div class="logo-mark">影</div>
+        <div>
+          <div class="text-xl font-bold tracking-tight text-slate-900">影讯档案</div>
+          <div class="text-xs text-slate-500">纯静态影视内容站</div>
+        </div>
+      </a>
+      <button id="navToggle" class="rounded-xl border border-slate-200 p-2 text-slate-700 hover:bg-slate-50 md:hidden" aria-label="展开导航">
+        <svg viewBox="0 0 24 24" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round"/></svg>
+      </button>
+      <nav id="navMenu" class="hidden items-center gap-2 md:flex">
+        <a href="index.html" class="rounded-full px-4 py-2 text-sm font-medium transition-colors text-gray-700 hover:text-cyan-600 hover:bg-gray-50">首页</a>
+<a href="ranking.html" class="rounded-full px-4 py-2 text-sm font-medium transition-colors text-gray-700 hover:text-cyan-600 hover:bg-gray-50">榜单</a>
+<a href="search.html" class="rounded-full px-4 py-2 text-sm font-medium transition-colors text-gray-700 hover:text-cyan-600 hover:bg-gray-50">搜索</a>
+<a href="browse.html#types" class="rounded-full px-4 py-2 text-sm font-medium transition-colors text-gray-700 hover:text-cyan-600 hover:bg-gray-50">类型</a>
+<a href="browse.html#regions" class="rounded-full px-4 py-2 text-sm font-medium transition-colors text-gray-700 hover:text-cyan-600 hover:bg-gray-50">地区</a>
+      </nav>
+    </div>
+    <div id="navPanel" class="hidden border-t border-slate-100 bg-white px-4 pb-4 pt-3 md:hidden sm:px-6 lg:px-8">
+      <div class="flex flex-wrap gap-2">
+        <a href="index.html" class="rounded-full px-4 py-2 text-sm font-medium transition-colors text-gray-700 hover:text-cyan-600 hover:bg-gray-50">首页</a>
+<a href="ranking.html" class="rounded-full px-4 py-2 text-sm font-medium transition-colors text-gray-700 hover:text-cyan-600 hover:bg-gray-50">榜单</a>
+<a href="search.html" class="rounded-full px-4 py-2 text-sm font-medium transition-colors text-gray-700 hover:text-cyan-600 hover:bg-gray-50">搜索</a>
+<a href="browse.html#types" class="rounded-full px-4 py-2 text-sm font-medium transition-colors text-gray-700 hover:text-cyan-600 hover:bg-gray-50">类型</a>
+<a href="browse.html#regions" class="rounded-full px-4 py-2 text-sm font-medium transition-colors text-gray-700 hover:text-cyan-600 hover:bg-gray-50">地区</a>
+      </div>
+    </div>
+  </header>
+  <main>
+    
+    <section class="py-10 sm:py-12">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="mb-8 rounded-[2rem] bg-white p-6 shadow-sm sm:p-8">
+          <div class="mb-3 flex flex-wrap items-center gap-2 text-sm text-slate-500">
+            <a class="hover:text-blue-600" href="index.html">首页</a>
+            <span>›</span>
+            <span>综艺 分类</span>
+          </div>
+          <h1 class="text-3xl font-bold text-slate-900 sm:text-4xl">综艺 分类</h1>
+          <p class="mt-3 max-w-3xl text-base leading-7 text-slate-600">按类型浏览：综艺，共 21 部。</p>
+        </div>
+        <div class="grid gap-6 sm:grid-cols-2 xl:grid-cols-4">
+    <a href="movie-1955.html" class="group block overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl">
+      
+    <div class="movie-poster movie-poster-sm" style="--c1:hsl(288 86% 62%);--c2:hsl(326 80% 48%);--c3:hsl(108 72% 28%);--c4:hsl(208 78% 55%);">
+      <div class="poster-glow"></div>
+      <div class="poster-content">
+        <div class="poster-letter">跑男</div>
+        <div class="poster-meta">2027</div>
+        <div class="poster-title">跑男来了第三季</div>
+      </div>
+    </div>
+      <div class="p-5">
+        <div class="mb-2 flex items-center justify-between gap-3 text-xs text-slate-500">
+          <span>综艺</span>
+          <span>中国大陆</span>
+        </div>
+        <h3 class="line-clamp-1 text-lg font-semibold text-slate-900 group-hover:text-blue-600">跑男来了第三季</h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600 line-clamp-3">这一季没有剧本,因为AI导演给每个人写了不同的“真相”。</p>
+        <div class="mt-4 flex flex-wrap gap-2"><span class="chip">户外竞技</span> <span class="chip">明星</span> <span class="chip">撕名牌</span></div>
+      </div>
+    </a>
+    <a href="movie-1231.html" class="group block overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl">
+      
+    <div class="movie-poster movie-poster-sm" style="--c1:hsl(127 86% 62%);--c2:hsl(165 80% 48%);--c3:hsl(307 72% 28%);--c4:hsl(47 78% 55%);">
+      <div class="poster-glow"></div>
+      <div class="poster-content">
+        <div class="poster-letter">打卡</div>
+        <div class="poster-meta">2026</div>
+        <div class="poster-title">打卡练歌房</div>
+      </div>
+    </div>
+      <div class="p-5">
+        <div class="mb-2 flex items-center justify-between gap-3 text-xs text-slate-500">
+          <span>综艺</span>
+          <span>中国大陆</span>
+        </div>
+        <h3 class="line-clamp-1 text-lg font-semibold text-slate-900 group-hover:text-blue-600">打卡练歌房</h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600 line-clamp-3">一档用“下班后去练歌房唱一小时”的形式,让普通人用歌声讲述自己职场故事的直播真人秀。</p>
+        <div class="mt-4 flex flex-wrap gap-2"><span class="chip">直播</span> <span class="chip">素人</span> <span class="chip">代际碰撞</span></div>
+      </div>
+    </a>
+    <a href="movie-0551.html" class="group block overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl">
+      
+    <div class="movie-poster movie-poster-sm" style="--c1:hsl(81 86% 62%);--c2:hsl(119 80% 48%);--c3:hsl(261 72% 28%);--c4:hsl(1 78% 55%);">
+      <div class="poster-glow"></div>
+      <div class="poster-content">
+        <div class="poster-letter">食在</div>
+        <div class="poster-meta">2025</div>
+        <div class="poster-title">食在好源头第四季</div>
+      </div>
+    </div>
+      <div class="p-5">
+        <div class="mb-2 flex items-center justify-between gap-3 text-xs text-slate-500">
+          <span>综艺</span>
+          <span>中国香港</span>
+        </div>
+        <h3 class="line-clamp-1 text-lg font-semibold text-slate-900 group-hover:text-blue-600">食在好源头第四季</h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600 line-clamp-3">美食家深入全球绝境寻找食材,这次在活火山上烤牛排,在深海捞海胆。</p>
+        <div class="mt-4 flex flex-wrap gap-2"><span class="chip">美食</span> <span class="chip">产地溯源</span> <span class="chip">文化</span></div>
+      </div>
+    </a>
+    <a href="movie-0808.html" class="group block overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl">
+      
+    <div class="movie-poster movie-poster-sm" style="--c1:hsl(159 86% 62%);--c2:hsl(197 80% 48%);--c3:hsl(339 72% 28%);--c4:hsl(79 78% 55%);">
+      <div class="poster-glow"></div>
+      <div class="poster-content">
+        <div class="poster-letter">超级</div>
+        <div class="poster-meta">2025</div>
+        <div class="poster-title">超级语文课第二季</div>
+      </div>
+    </div>
+      <div class="p-5">
+        <div class="mb-2 flex items-center justify-between gap-3 text-xs text-slate-500">
+          <span>综艺</span>
+          <span>中国大陆</span>
+        </div>
+        <h3 class="line-clamp-1 text-lg font-semibold text-slate-900 group-hover:text-blue-600">超级语文课第二季</h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600 line-clamp-3">这一季,老师们要在48小时内,用一堂语文课打动一所全盲学校的孩子。</p>
+        <div class="mt-4 flex flex-wrap gap-2"><span class="chip">语文</span> <span class="chip">教育</span> <span class="chip">名师</span></div>
+      </div>
+    </a>
+    <a href="movie-0812.html" class="group block overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl">
+      
+    <div class="movie-poster movie-poster-sm" style="--c1:hsl(137 86% 62%);--c2:hsl(175 80% 48%);--c3:hsl(317 72% 28%);--c4:hsl(57 78% 55%);">
+      <div class="poster-glow"></div>
+      <div class="poster-content">
+        <div class="poster-letter">萌仔</div>
+        <div class="poster-meta">2025</div>
+        <div class="poster-title">萌仔萌萌宅</div>
+      </div>
+    </div>
+      <div class="p-5">
+        <div class="mb-2 flex items-center justify-between gap-3 text-xs text-slate-500">
+          <span>综艺</span>
+          <span>中国大陆</span>
+        </div>
+        <h3 class="line-clamp-1 text-lg font-semibold text-slate-900 group-hover:text-blue-600">萌仔萌萌宅</h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600 line-clamp-3">四个城市萌娃和两只流浪狗,在一座没有网络的深山老宅里,试图教会大人什么是快乐。</p>
+        <div class="mt-4 flex flex-wrap gap-2"><span class="chip">萌宠</span> <span class="chip">孩童</span> <span class="chip">乡村生活</span></div>
+      </div>
+    </a>
+    <a href="movie-1299.html" class="group block overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl">
+      
+    <div class="movie-poster movie-poster-sm" style="--c1:hsl(229 86% 62%);--c2:hsl(267 80% 48%);--c3:hsl(49 72% 28%);--c4:hsl(149 78% 55%);">
+      <div class="poster-glow"></div>
+      <div class="poster-content">
+        <div class="poster-letter">喜剧</div>
+        <div class="poster-meta">2025</div>
+        <div class="poster-title">喜剧之王单口季第二季</div>
+      </div>
+    </div>
+      <div class="p-5">
+        <div class="mb-2 flex items-center justify-between gap-3 text-xs text-slate-500">
+          <span>综艺</span>
+          <span>中国大陆</span>
+        </div>
+        <h3 class="line-clamp-1 text-lg font-semibold text-slate-900 group-hover:text-blue-600">喜剧之王单口季第二季</h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600 line-clamp-3">周星驰担任发起人,全国最会讲段子的人汇聚一堂,只为争夺新一代“喜剧之王”的称号。</p>
+        <div class="mt-4 flex flex-wrap gap-2"><span class="chip">脱口秀</span> <span class="chip">竞技</span> <span class="chip">单口喜剧</span></div>
+      </div>
+    </a>
+    <a href="movie-1491.html" class="group block overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl">
+      
+    <div class="movie-poster movie-poster-sm" style="--c1:hsl(294 86% 62%);--c2:hsl(332 80% 48%);--c3:hsl(114 72% 28%);--c4:hsl(214 78% 55%);">
+      <div class="poster-glow"></div>
+      <div class="poster-content">
+        <div class="poster-letter">开始</div>
+        <div class="poster-meta">2025</div>
+        <div class="poster-title">开始跳舞吧 第二季</div>
+      </div>
+    </div>
+      <div class="p-5">
+        <div class="mb-2 flex items-center justify-between gap-3 text-xs text-slate-500">
+          <span>综艺</span>
+          <span>中国大陆</span>
+        </div>
+        <h3 class="line-clamp-1 text-lg font-semibold text-slate-900 group-hover:text-blue-600">开始跳舞吧 第二季</h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600 line-clamp-3">六支顶级街舞厂牌、24位明星队长,没有淘汰,只有积分,末位厂牌将被永久除名。</p>
+        <div class="mt-4 flex flex-wrap gap-2"><span class="chip">街舞</span> <span class="chip">齐舞</span> <span class="chip">厂牌对抗</span></div>
+      </div>
+    </a>
+    <a href="movie-1870.html" class="group block overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl">
+      
+    <div class="movie-poster movie-poster-sm" style="--c1:hsl(52 86% 62%);--c2:hsl(90 80% 48%);--c3:hsl(232 72% 28%);--c4:hsl(332 78% 55%);">
+      <div class="poster-glow"></div>
+      <div class="poster-content">
+        <div class="poster-letter">欢乐</div>
+        <div class="poster-meta">2025</div>
+        <div class="poster-title">欢乐喜剧人 老友季</div>
+      </div>
+    </div>
+      <div class="p-5">
+        <div class="mb-2 flex items-center justify-between gap-3 text-xs text-slate-500">
+          <span>综艺</span>
+          <span>中国大陆</span>
+        </div>
+        <h3 class="line-clamp-1 text-lg font-semibold text-slate-900 group-hover:text-blue-600">欢乐喜剧人 老友季</h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600 line-clamp-3">十组曾经的王牌喜剧人时隔五年重聚舞台,每期一个经典主题,用全新作品向自己的代表作致敬。</p>
+        <div class="mt-4 flex flex-wrap gap-2"><span class="chip">喜剧人重聚</span> <span class="chip">老友对决</span> <span class="chip">经典角色再现</span></div>
+      </div>
+    </a>
+    <a href="movie-1419.html" class="group block overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl">
+      
+    <div class="movie-poster movie-poster-sm" style="--c1:hsl(90 86% 62%);--c2:hsl(128 80% 48%);--c3:hsl(270 72% 28%);--c4:hsl(10 78% 55%);">
+      <div class="poster-glow"></div>
+      <div class="poster-content">
+        <div class="poster-letter">喵喵</div>
+        <div class="poster-meta">2025</div>
+        <div class="poster-title">喵喵请听好</div>
+      </div>
+    </div>
+      <div class="p-5">
+        <div class="mb-2 flex items-center justify-between gap-3 text-xs text-slate-500">
+          <span>综艺</span>
+          <span>中国大陆</span>
+        </div>
+        <h3 class="line-clamp-1 text-lg font-semibold text-slate-900 group-hover:text-blue-600">喵喵请听好</h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600 line-clamp-3">一群明星嘉宾在街角经营一家“猫咪电台”,只接收猫咪的“来电”和心事,并为它们的人类解忧。</p>
+        <div class="mt-4 flex flex-wrap gap-2"><span class="chip">猫咪</span> <span class="chip">电台</span> <span class="chip">慢综艺</span></div>
+      </div>
+    </a>
+    <a href="movie-0712.html" class="group block overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl">
+      
+    <div class="movie-poster movie-poster-sm" style="--c1:hsl(256 86% 62%);--c2:hsl(294 80% 48%);--c3:hsl(76 72% 28%);--c4:hsl(176 78% 55%);">
+      <div class="poster-glow"></div>
+      <div class="poster-content">
+        <div class="poster-letter">今日</div>
+        <div class="poster-meta">2024</div>
+        <div class="poster-title">今日世界夜生活</div>
+      </div>
+    </div>
+      <div class="p-5">
+        <div class="mb-2 flex items-center justify-between gap-3 text-xs text-slate-500">
+          <span>综艺</span>
+          <span>日本/韩国</span>
+        </div>
+        <h3 class="line-clamp-1 text-lg font-semibold text-slate-900 group-hover:text-blue-600">今日世界夜生活</h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600 line-clamp-3">日韩两位主持人分头潜入全球12座城市的深夜,记录从凌晨到日出的“夜行者”们真实的生存与狂欢。</p>
+        <div class="mt-4 flex flex-wrap gap-2"><span class="chip">夜经济</span> <span class="chip">都市夜归人</span> <span class="chip">跨文化</span></div>
+      </div>
+    </a>
+    <a href="movie-0833.html" class="group block overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl">
+      
+    <div class="movie-poster movie-poster-sm" style="--c1:hsl(302 86% 62%);--c2:hsl(340 80% 48%);--c3:hsl(122 72% 28%);--c4:hsl(222 78% 55%);">
+      <div class="poster-glow"></div>
+      <div class="poster-content">
+        <div class="poster-letter">一起</div>
+        <div class="poster-meta">2024</div>
+        <div class="poster-title">一起听团吧</div>
+      </div>
+    </div>
+      <div class="p-5">
+        <div class="mb-2 flex items-center justify-between gap-3 text-xs text-slate-500">
+          <span>综艺</span>
+          <span>中国台湾</span>
+        </div>
+        <h3 class="line-clamp-1 text-lg font-semibold text-slate-900 group-hover:text-blue-600">一起听团吧</h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600 line-clamp-3">十组解散多年的传奇独立乐团限时重组,争夺“世纪复出”资格,但旧日恩怨比新歌更难搞定。</p>
+        <div class="mt-4 flex flex-wrap gap-2"><span class="chip">乐团</span> <span class="chip">竞演</span> <span class="chip">改编</span></div>
+      </div>
+    </a>
+    <a href="movie-1562.html" class="group block overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl">
+      
+    <div class="movie-poster movie-poster-sm" style="--c1:hsl(234 86% 62%);--c2:hsl(272 80% 48%);--c3:hsl(54 72% 28%);--c4:hsl(154 78% 55%);">
+      <div class="poster-glow"></div>
+      <div class="poster-content">
+        <div class="poster-letter">我是</div>
+        <div class="poster-meta">2024</div>
+        <div class="poster-title">我是唱作人第一季</div>
+      </div>
+    </div>
+      <div class="p-5">
+        <div class="mb-2 flex items-center justify-between gap-3 text-xs text-slate-500">
+          <span>综艺</span>
+          <span>中国大陆</span>
+        </div>
+        <h3 class="line-clamp-1 text-lg font-semibold text-slate-900 group-hover:text-blue-600">我是唱作人第一季</h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600 line-clamp-3">八位从未公开过新作的唱作人被关进一间录音棚,每周交一首歌,输的人当场销毁所有母带。</p>
+        <div class="mt-4 flex flex-wrap gap-2"><span class="chip">原创</span> <span class="chip">比赛</span> <span class="chip">唱作人</span></div>
+      </div>
+    </a>
+    <a href="movie-1408.html" class="group block overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl">
+      
+    <div class="movie-poster movie-poster-sm" style="--c1:hsl(162 86% 62%);--c2:hsl(200 80% 48%);--c3:hsl(342 72% 28%);--c4:hsl(82 78% 55%);">
+      <div class="poster-glow"></div>
+      <div class="poster-content">
+        <div class="poster-letter">魔方</div>
+        <div class="poster-meta">2024</div>
+        <div class="poster-title">魔方新世界</div>
+      </div>
+    </div>
+      <div class="p-5">
+        <div class="mb-2 flex items-center justify-between gap-3 text-xs text-slate-500">
+          <span>综艺</span>
+          <span>中国大陆</span>
+        </div>
+        <h3 class="line-clamp-1 text-lg font-semibold text-slate-900 group-hover:text-blue-600">魔方新世界</h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600 line-clamp-3">18位玩家被关进一个由无数魔方组成的巨型迷宫,每一轮都要在“合作”与“背叛”中选择才能活下来。</p>
+        <div class="mt-4 flex flex-wrap gap-2"><span class="chip">益智</span> <span class="chip">博弈</span> <span class="chip">闯关</span></div>
+      </div>
+    </a>
+    <a href="movie-1765.html" class="group block overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl">
+      
+    <div class="movie-poster movie-poster-sm" style="--c1:hsl(331 86% 62%);--c2:hsl(9 80% 48%);--c3:hsl(151 72% 28%);--c4:hsl(251 78% 55%);">
+      <div class="poster-glow"></div>
+      <div class="poster-content">
+        <div class="poster-letter">下一</div>
+        <div class="poster-meta">2024</div>
+        <div class="poster-title">下一战歌手</div>
+      </div>
+    </div>
+      <div class="p-5">
+        <div class="mb-2 flex items-center justify-between gap-3 text-xs text-slate-500">
+          <span>综艺</span>
+          <span>中国大陆</span>
+        </div>
+        <h3 class="line-clamp-1 text-lg font-semibold text-slate-900 group-hover:text-blue-600">下一战歌手</h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600 line-clamp-3">摒弃修音,全开麦直播,一群怀揣梦想的素人在高压下争夺唯一一张改变命运的签约合同。</p>
+        <div class="mt-4 flex flex-wrap gap-2"><span class="chip">素人</span> <span class="chip">舞台竞演</span> <span class="chip">导师制</span></div>
+      </div>
+    </a>
+    <a href="movie-1878.html" class="group block overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl">
+      
+    <div class="movie-poster movie-poster-sm" style="--c1:hsl(330 86% 62%);--c2:hsl(8 80% 48%);--c3:hsl(150 72% 28%);--c4:hsl(250 78% 55%);">
+      <div class="poster-glow"></div>
+      <div class="poster-content">
+        <div class="poster-letter">朋友</div>
+        <div class="poster-meta">2024</div>
+        <div class="poster-title">朋友请吃好</div>
+      </div>
+    </div>
+      <div class="p-5">
+        <div class="mb-2 flex items-center justify-between gap-3 text-xs text-slate-500">
+          <span>综艺</span>
+          <span>中国</span>
+        </div>
+        <h3 class="line-clamp-1 text-lg font-semibold text-slate-900 group-hover:text-blue-600">朋友请吃好</h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600 line-clamp-3">每期一位明星回到记忆中的路边摊,用一道菜换一个陌生人的人生故事,最后还原那顿饭。</p>
+        <div class="mt-4 flex flex-wrap gap-2"><span class="chip">美食</span> <span class="chip">情感</span> <span class="chip">明星</span></div>
+      </div>
+    </a>
+    <a href="movie-1442.html" class="group block overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl">
+      
+    <div class="movie-poster movie-poster-sm" style="--c1:hsl(251 86% 62%);--c2:hsl(289 80% 48%);--c3:hsl(71 72% 28%);--c4:hsl(171 78% 55%);">
+      <div class="poster-glow"></div>
+      <div class="poster-content">
+        <div class="poster-letter">罗䁐</div>
+        <div class="poster-meta">2024</div>
+        <div class="poster-title">罗䁐锡的啰嗦啰嗦</div>
+      </div>
+    </div>
+      <div class="p-5">
+        <div class="mb-2 flex items-center justify-between gap-3 text-xs text-slate-500">
+          <span>综艺</span>
+          <span>韩国</span>
+        </div>
+        <h3 class="line-clamp-1 text-lg font-semibold text-slate-900 group-hover:text-blue-600">罗䁐锡的啰嗦啰嗦</h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600 line-clamp-3">韩国王牌制作人罗䁐锡被“惩罚”独自开车横穿美国,全程只能自言自语。</p>
+        <div class="mt-4 flex flex-wrap gap-2"><span class="chip">罗PD</span> <span class="chip">治愈</span> <span class="chip">旅行</span></div>
+      </div>
+    </a>
+    <a href="movie-1638.html" class="group block overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl">
+      
+    <div class="movie-poster movie-poster-sm" style="--c1:hsl(289 86% 62%);--c2:hsl(327 80% 48%);--c3:hsl(109 72% 28%);--c4:hsl(209 78% 55%);">
+      <div class="poster-glow"></div>
+      <div class="poster-content">
+        <div class="poster-letter">闪亮</div>
+        <div class="poster-meta">2024</div>
+        <div class="poster-title">闪亮的歌声</div>
+      </div>
+    </div>
+      <div class="p-5">
+        <div class="mb-2 flex items-center justify-between gap-3 text-xs text-slate-500">
+          <span>综艺</span>
+          <span>中国大陆</span>
+        </div>
+        <h3 class="line-clamp-1 text-lg font-semibold text-slate-900 group-hover:text-blue-600">闪亮的歌声</h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600 line-clamp-3">一群被生活磨平棱角的普通人,用合唱找回灵魂的光芒。</p>
+        <div class="mt-4 flex flex-wrap gap-2"><span class="chip">合唱</span> <span class="chip">素人</span> <span class="chip">治愈</span></div>
+      </div>
+    </a>
+    <a href="movie-1805.html" class="group block overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl">
+      
+    <div class="movie-poster movie-poster-sm" style="--c1:hsl(103 86% 62%);--c2:hsl(141 80% 48%);--c3:hsl(283 72% 28%);--c4:hsl(23 78% 55%);">
+      <div class="poster-glow"></div>
+      <div class="poster-content">
+        <div class="poster-letter">综艺</div>
+        <div class="poster-meta">2024</div>
+        <div class="poster-title">综艺玩很大</div>
+      </div>
+    </div>
+      <div class="p-5">
+        <div class="mb-2 flex items-center justify-between gap-3 text-xs text-slate-500">
+          <span>综艺</span>
+          <span>台湾</span>
+        </div>
+        <h3 class="line-clamp-1 text-lg font-semibold text-slate-900 group-hover:text-blue-600">综艺玩很大</h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600 line-clamp-3">每集艺人被丢到无人岛或废城,完成“玩很大”任务,输家要接受反人性终极惩罚。</p>
+        <div class="mt-4 flex flex-wrap gap-2"><span class="chip">户外竞技</span> <span class="chip">明星惩罚</span> <span class="chip">极限挑战</span></div>
+      </div>
+    </a>
+    <a href="movie-1183.html" class="group block overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl">
+      
+    <div class="movie-poster movie-poster-sm" style="--c1:hsl(290 86% 62%);--c2:hsl(328 80% 48%);--c3:hsl(110 72% 28%);--c4:hsl(210 78% 55%);">
+      <div class="poster-glow"></div>
+      <div class="poster-content">
+        <div class="poster-letter">嗨营</div>
+        <div class="poster-meta">2023</div>
+        <div class="poster-title">嗨!营业中第二季</div>
+      </div>
+    </div>
+      <div class="p-5">
+        <div class="mb-2 flex items-center justify-between gap-3 text-xs text-slate-500">
+          <span>综艺</span>
+          <span>中国台湾</span>
+        </div>
+        <h3 class="line-clamp-1 text-lg font-semibold text-slate-900 group-hover:text-blue-600">嗨!营业中第二季</h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600 line-clamp-3">原班人马移师到荒凉的海边,开一间只有一部破旧餐车的快闪店,这次连水龙头都没有。</p>
+        <div class="mt-4 flex flex-wrap gap-2"><span class="chip">明星经营</span> <span class="chip">户外烹饪</span> <span class="chip">团队矛盾</span></div>
+      </div>
+    </a>
+    <a href="movie-1616.html" class="group block overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl">
+      
+    <div class="movie-poster movie-poster-sm" style="--c1:hsl(79 86% 62%);--c2:hsl(117 80% 48%);--c3:hsl(259 72% 28%);--c4:hsl(359 78% 55%);">
+      <div class="poster-glow"></div>
+      <div class="poster-content">
+        <div class="poster-letter">中餐</div>
+        <div class="poster-meta">2021</div>
+        <div class="poster-title">中餐厅第三季</div>
+      </div>
+    </div>
+      <div class="p-5">
+        <div class="mb-2 flex items-center justify-between gap-3 text-xs text-slate-500">
+          <span>综艺</span>
+          <span>中国大陆</span>
+        </div>
+        <h3 class="line-clamp-1 text-lg font-semibold text-slate-900 group-hover:text-blue-600">中餐厅第三季</h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600 line-clamp-3">五位明星远赴意大利西西里岛,用20天时间将一家废弃酒馆改造成爆款中餐厅。</p>
+        <div class="mt-4 flex flex-wrap gap-2"><span class="chip">经营</span> <span class="chip">明星</span> <span class="chip">海外创业</span></div>
+      </div>
+    </a>
+    <a href="movie-1418.html" class="group block overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl">
+      
+    <div class="movie-poster movie-poster-sm" style="--c1:hsl(127 86% 62%);--c2:hsl(165 80% 48%);--c3:hsl(307 72% 28%);--c4:hsl(47 78% 55%);">
+      <div class="poster-glow"></div>
+      <div class="poster-content">
+        <div class="poster-letter">机智</div>
+        <div class="poster-meta">2021</div>
+        <div class="poster-title">机智的山村生活</div>
+      </div>
+    </div>
+      <div class="p-5">
+        <div class="mb-2 flex items-center justify-between gap-3 text-xs text-slate-500">
+          <span>综艺</span>
+          <span>韩国</span>
+        </div>
+        <h3 class="line-clamp-1 text-lg font-semibold text-slate-900 group-hover:text-blue-600">机智的山村生活</h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600 line-clamp-3">一群把首尔租来的房子退掉的明星,被扔到偏远的山村开始自给自足的生活。</p>
+        <div class="mt-4 flex flex-wrap gap-2"><span class="chip">治愈</span> <span class="chip">乡村</span> <span class="chip">老罗</span></div>
+      </div>
+    </a></div>
+        <div class="mt-10 flex flex-wrap items-center justify-center gap-3"><span class="rounded-full bg-blue-600 px-4 py-2 text-sm font-semibold text-white">第 1 / 1 页</span></div>
+      </div>
+    </section>
+    
+  </main>
+  <footer class="border-t border-slate-200 bg-slate-950 text-slate-300">
+    <div class="mx-auto grid max-w-7xl gap-8 px-4 py-12 sm:px-6 lg:grid-cols-4 lg:px-8">
+      <div class="lg:col-span-2">
+        <div class="mb-4 flex items-center gap-3">
+          <div class="logo-mark logo-mark-dark">影</div>
+          <div>
+            <div class="text-xl font-bold text-white">影讯档案</div>
+            <div class="text-sm text-slate-400">完整收录 2000 部影片条目</div>
+          </div>
+        </div>
+        <p class="max-w-xl text-sm leading-7 text-slate-400">本站为纯静态结构，所有核心影片信息均直接写入 HTML 页面，便于检索、浏览与二次部署。</p>
+      </div>
+      <div>
+        <div class="mb-4 text-sm font-semibold text-white">导航</div>
+        <div class="space-y-2 text-sm">
+          <a class="block hover:text-white" href="index.html">首页</a>
+          <a class="block hover:text-white" href="ranking.html">榜单</a>
+          <a class="block hover:text-white" href="search.html">搜索</a>
+          <a class="block hover:text-white" href="browse.html">分类</a>
+        </div>
+      </div>
+      <div>
+        <div class="mb-4 text-sm font-semibold text-white">数据</div>
+        <div class="space-y-2 text-sm text-slate-400">
+          <div>影片总数：2000</div>
+          <div>页面类型：首页 / 榜单 / 搜索 / 分类 / 详情</div>
+          <div>输出格式：纯静态 HTML</div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?76b5e2e0f6c84c06f0a7cb7105df054d";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+  <script src="assets/site.js"></script>
+</body>
+</html>

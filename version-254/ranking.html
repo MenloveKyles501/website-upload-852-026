@@ -1,0 +1,1700 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>站内热度榜 - 影讯档案</title>
+  <meta name="description" content="按综合热度整理的站内推荐榜单。">
+  <meta name="theme-color" content="#1d4ed8">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/base.css">
+  <link rel="stylesheet" href="assets/site.css">
+</head>
+<body class="min-h-screen bg-slate-50 text-slate-900 antialiased">
+  <header class="sticky top-0 z-50 border-b border-white/70 bg-white/90 backdrop-blur-xl shadow-sm">
+    <div class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-4 sm:px-6 lg:px-8">
+      <a href="index.html" class="flex items-center gap-3">
+        <div class="logo-mark">影</div>
+        <div>
+          <div class="text-xl font-bold tracking-tight text-slate-900">影讯档案</div>
+          <div class="text-xs text-slate-500">纯静态影视内容站</div>
+        </div>
+      </a>
+      <button id="navToggle" class="rounded-xl border border-slate-200 p-2 text-slate-700 hover:bg-slate-50 md:hidden" aria-label="展开导航">
+        <svg viewBox="0 0 24 24" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round"/></svg>
+      </button>
+      <nav id="navMenu" class="hidden items-center gap-2 md:flex">
+        <a href="index.html" class="rounded-full px-4 py-2 text-sm font-medium transition-colors text-gray-700 hover:text-cyan-600 hover:bg-gray-50">首页</a>
+<a href="ranking.html" class="rounded-full px-4 py-2 text-sm font-medium transition-colors text-blue-600 bg-blue-50">榜单</a>
+<a href="search.html" class="rounded-full px-4 py-2 text-sm font-medium transition-colors text-gray-700 hover:text-cyan-600 hover:bg-gray-50">搜索</a>
+<a href="browse.html#types" class="rounded-full px-4 py-2 text-sm font-medium transition-colors text-gray-700 hover:text-cyan-600 hover:bg-gray-50">类型</a>
+<a href="browse.html#regions" class="rounded-full px-4 py-2 text-sm font-medium transition-colors text-gray-700 hover:text-cyan-600 hover:bg-gray-50">地区</a>
+      </nav>
+    </div>
+    <div id="navPanel" class="hidden border-t border-slate-100 bg-white px-4 pb-4 pt-3 md:hidden sm:px-6 lg:px-8">
+      <div class="flex flex-wrap gap-2">
+        <a href="index.html" class="rounded-full px-4 py-2 text-sm font-medium transition-colors text-gray-700 hover:text-cyan-600 hover:bg-gray-50">首页</a>
+<a href="ranking.html" class="rounded-full px-4 py-2 text-sm font-medium transition-colors text-blue-600 bg-blue-50">榜单</a>
+<a href="search.html" class="rounded-full px-4 py-2 text-sm font-medium transition-colors text-gray-700 hover:text-cyan-600 hover:bg-gray-50">搜索</a>
+<a href="browse.html#types" class="rounded-full px-4 py-2 text-sm font-medium transition-colors text-gray-700 hover:text-cyan-600 hover:bg-gray-50">类型</a>
+<a href="browse.html#regions" class="rounded-full px-4 py-2 text-sm font-medium transition-colors text-gray-700 hover:text-cyan-600 hover:bg-gray-50">地区</a>
+      </div>
+    </div>
+  </header>
+  <main>
+    
+    <section class="py-10 sm:py-12">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="mb-8 rounded-[2rem] bg-gradient-to-br from-slate-950 via-blue-950 to-cyan-700 p-6 text-white shadow-xl sm:p-8">
+          <div class="inline-flex rounded-full bg-white/10 px-4 py-2 text-xs font-semibold tracking-[0.25em] text-cyan-200 uppercase">Top Picks</div>
+          <h1 class="mt-4 text-3xl font-bold sm:text-4xl">站内热度榜</h1>
+          <p class="mt-3 max-w-3xl text-base leading-7 text-slate-200">按年份、题材与关联度综合排序，展示更适合首先浏览的影片条目。</p>
+        </div>
+        <div class="grid gap-6 sm:grid-cols-2 xl:grid-cols-4">
+    <a href="movie-0123.html" class="group block overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl">
+      
+    <div class="movie-poster movie-poster-sm" style="--c1:hsl(156 86% 62%);--c2:hsl(194 80% 48%);--c3:hsl(336 72% 28%);--c4:hsl(76 78% 55%);">
+      <div class="poster-glow"></div>
+      <div class="poster-content">
+        <div class="poster-letter">怒海</div>
+        <div class="poster-meta">2025</div>
+        <div class="poster-title">怒海雄风</div>
+      </div>
+    </div>
+      <div class="p-5">
+        <div class="mb-2 flex items-center justify-between gap-3 text-xs text-slate-500">
+          <span>电影</span>
+          <span>中国大陆</span>
+        </div>
+        <h3 class="line-clamp-1 text-lg font-semibold text-slate-900 group-hover:text-blue-600">怒海雄风</h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600 line-clamp-3">台风夜,一艘货轮断成两截,七个救援队员冲进十七米高的巨浪。</p>
+        <div class="mt-4 flex flex-wrap gap-2"><span class="chip">海上救援</span> <span class="chip">硬汉</span> <span class="chip">生死时速</span></div>
+      </div>
+    </a>
+    <a href="movie-0789.html" class="group block overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl">
+      
+    <div class="movie-poster movie-poster-sm" style="--c1:hsl(171 86% 62%);--c2:hsl(209 80% 48%);--c3:hsl(351 72% 28%);--c4:hsl(91 78% 55%);">
+      <div class="poster-glow"></div>
+      <div class="poster-content">
+        <div class="poster-letter">凶犯</div>
+        <div class="poster-meta">2025</div>
+        <div class="poster-title">凶犯脑中的阿罗·托尔巴钦</div>
+      </div>
+    </div>
+      <div class="p-5">
+        <div class="mb-2 flex items-center justify-between gap-3 text-xs text-slate-500">
+          <span>电影</span>
+          <span>俄罗斯</span>
+        </div>
+        <h3 class="line-clamp-1 text-lg font-semibold text-slate-900 group-hover:text-blue-600">凶犯脑中的阿罗·托尔巴钦</h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600 line-clamp-3">为了找到最后一具尸体,犯罪心理学家必须进入被处决凶犯的大脑,却发现自己正在变成他。</p>
+        <div class="mt-4 flex flex-wrap gap-2"><span class="chip">意识入侵</span> <span class="chip">连环杀手</span> <span class="chip">俄罗斯暗黑系</span></div>
+      </div>
+    </a>
+    <a href="movie-0234.html" class="group block overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl">
+      
+    <div class="movie-poster movie-poster-sm" style="--c1:hsl(86 86% 62%);--c2:hsl(124 80% 48%);--c3:hsl(266 72% 28%);--c4:hsl(6 78% 55%);">
+      <div class="poster-glow"></div>
+      <div class="poster-content">
+        <div class="poster-letter">八仙</div>
+        <div class="poster-meta">2026</div>
+        <div class="poster-title">八仙全传</div>
+      </div>
+    </div>
+      <div class="p-5">
+        <div class="mb-2 flex items-center justify-between gap-3 text-xs text-slate-500">
+          <span>电视剧</span>
+          <span>中国大陆</span>
+        </div>
+        <h3 class="line-clamp-1 text-lg font-semibold text-slate-900 group-hover:text-blue-600">八仙全传</h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600 line-clamp-3">八个被天庭除名的废仙,为了重新封神,必须在人间完成八件看似不可能完成的善事。</p>
+        <div class="mt-4 flex flex-wrap gap-2"><span class="chip">神话改编</span> <span class="chip">群像剧</span> <span class="chip">修仙</span></div>
+      </div>
+    </a>
+    <a href="movie-0459.html" class="group block overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl">
+      
+    <div class="movie-poster movie-poster-sm" style="--c1:hsl(172 86% 62%);--c2:hsl(210 80% 48%);--c3:hsl(352 72% 28%);--c4:hsl(92 78% 55%);">
+      <div class="poster-glow"></div>
+      <div class="poster-content">
+        <div class="poster-letter">反斗</div>
+        <div class="poster-meta">2027</div>
+        <div class="poster-title">反斗熊心</div>
+      </div>
+    </div>
+      <div class="p-5">
+        <div class="mb-2 flex items-center justify-between gap-3 text-xs text-slate-500">
+          <span>电影</span>
+          <span>中国大陆</span>
+        </div>
+        <h3 class="line-clamp-1 text-lg font-semibold text-slate-900 group-hover:text-blue-600">反斗熊心</h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600 line-clamp-3">一只从小被人类当宠物养大的棕熊被放归森林,它决定用“文明”的方式竞选熊王。</p>
+        <div class="mt-4 flex flex-wrap gap-2"><span class="chip">熊</span> <span class="chip">森林</span> <span class="chip">环保</span></div>
+      </div>
+    </a>
+    <a href="movie-0092.html" class="group block overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl">
+      
+    <div class="movie-poster movie-poster-sm" style="--c1:hsl(52 86% 62%);--c2:hsl(90 80% 48%);--c3:hsl(232 72% 28%);--c4:hsl(332 78% 55%);">
+      <div class="poster-glow"></div>
+      <div class="poster-content">
+        <div class="poster-letter">兴盛</div>
+        <div class="poster-meta">2027</div>
+        <div class="poster-title">兴盛</div>
+      </div>
+    </div>
+      <div class="p-5">
+        <div class="mb-2 flex items-center justify-between gap-3 text-xs text-slate-500">
+          <span>电影</span>
+          <span>中国大陆</span>
+        </div>
+        <h3 class="line-clamp-1 text-lg font-semibold text-slate-900 group-hover:text-blue-600">兴盛</h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600 line-clamp-3">清末民初,一个靠刺绣起家的家族如何在时代洪流中三次从废墟里站起来。</p>
+        <div class="mt-4 flex flex-wrap gap-2"><span class="chip">商战</span> <span class="chip">家族</span> <span class="chip">年代</span></div>
+      </div>
+    </a>
+    <a href="movie-0208.html" class="group block overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl">
+      
+    <div class="movie-poster movie-poster-sm" style="--c1:hsl(19 86% 62%);--c2:hsl(57 80% 48%);--c3:hsl(199 72% 28%);--c4:hsl(299 78% 55%);">
+      <div class="poster-glow"></div>
+      <div class="poster-content">
+        <div class="poster-letter">巴克</div>
+        <div class="poster-meta">2028</div>
+        <div class="poster-title">巴克劳</div>
+      </div>
+    </div>
+      <div class="p-5">
+        <div class="mb-2 flex items-center justify-between gap-3 text-xs text-slate-500">
+          <span>电影</span>
+          <span>巴西</span>
+        </div>
+        <h3 class="line-clamp-1 text-lg font-semibold text-slate-900 group-hover:text-blue-600">巴克劳</h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600 line-clamp-3">一个高科技雇佣兵团闯入巴西偏远村庄“巴克劳”屠杀,却发现村民们早已准备好了来自石器时代和现代文明的混合陷阱。</p>
+        <div class="mt-4 flex flex-wrap gap-2"><span class="chip">原始与科技</span> <span class="chip">反殖民</span> <span class="chip">村庄保卫战</span></div>
+      </div>
+    </a>
+    <a href="movie-0567.html" class="group block overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl">
+      
+    <div class="movie-poster movie-poster-sm" style="--c1:hsl(60 86% 62%);--c2:hsl(98 80% 48%);--c3:hsl(240 72% 28%);--c4:hsl(340 78% 55%);">
+      <div class="poster-glow"></div>
+      <div class="poster-content">
+        <div class="poster-letter">我亲</div>
+        <div class="poster-meta">2025</div>
+        <div class="poster-title">我亲昵而温柔的野兽</div>
+      </div>
+    </div>
+      <div class="p-5">
+        <div class="mb-2 flex items-center justify-between gap-3 text-xs text-slate-500">
+          <span>电影</span>
+          <span>法国</span>
+        </div>
+        <h3 class="line-clamp-1 text-lg font-semibold text-slate-900 group-hover:text-blue-600">我亲昵而温柔的野兽</h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600 line-clamp-3">一个被村民视为“野兽”的畸形孤儿,与一个逃婚的贵族少女在森林里相遇,彼此驯养了对方。</p>
+        <div class="mt-4 flex flex-wrap gap-2"><span class="chip">少女</span> <span class="chip">野兽</span> <span class="chip">救赎</span></div>
+      </div>
+    </a>
+    <a href="movie-0913.html" class="group block overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl">
+      
+    <div class="movie-poster movie-poster-sm" style="--c1:hsl(143 86% 62%);--c2:hsl(181 80% 48%);--c3:hsl(323 72% 28%);--c4:hsl(63 78% 55%);">
+      <div class="poster-glow"></div>
+      <div class="poster-content">
+        <div class="poster-letter">菩萨</div>
+        <div class="poster-meta">2029</div>
+        <div class="poster-title">菩萨戒</div>
+      </div>
+    </div>
+      <div class="p-5">
+        <div class="mb-2 flex items-center justify-between gap-3 text-xs text-slate-500">
+          <span>电影</span>
+          <span>中国大陆</span>
+        </div>
+        <h3 class="line-clamp-1 text-lg font-semibold text-slate-900 group-hover:text-blue-600">菩萨戒</h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600 line-clamp-3">唐朝律宗盛时,一个犯了杀戒的和尚受命担任戒场教授,他必须在三日内决定是自首还是为众生开坛。</p>
+        <div class="mt-4 flex flex-wrap gap-2"><span class="chip">古代</span> <span class="chip">僧侣</span> <span class="chip">律法</span></div>
+      </div>
+    </a>
+    <a href="movie-0723.html" class="group block overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl">
+      
+    <div class="movie-poster movie-poster-sm" style="--c1:hsl(314 86% 62%);--c2:hsl(352 80% 48%);--c3:hsl(134 72% 28%);--c4:hsl(234 78% 55%);">
+      <div class="poster-glow"></div>
+      <div class="poster-content">
+        <div class="poster-letter">艳秘</div>
+        <div class="poster-meta">2029</div>
+        <div class="poster-title">艳秘书</div>
+      </div>
+    </div>
+      <div class="p-5">
+        <div class="mb-2 flex items-center justify-between gap-3 text-xs text-slate-500">
+          <span>电视剧</span>
+          <span>中国</span>
+        </div>
+        <h3 class="line-clamp-1 text-lg font-semibold text-slate-900 group-hover:text-blue-600">艳秘书</h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600 line-clamp-3">公司最不起眼的秘书,用了三年时间让整个董事会的人互相指控谋杀。</p>
+        <div class="mt-4 flex flex-wrap gap-2"><span class="chip">职场黑莲花</span> <span class="chip">反转</span> <span class="chip">女性复仇</span></div>
+      </div>
+    </a>
+    <a href="movie-0602.html" class="group block overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl">
+      
+    <div class="movie-poster movie-poster-sm" style="--c1:hsl(95 86% 62%);--c2:hsl(133 80% 48%);--c3:hsl(275 72% 28%);--c4:hsl(15 78% 55%);">
+      <div class="poster-glow"></div>
+      <div class="poster-content">
+        <div class="poster-letter">遗传</div>
+        <div class="poster-meta">2029</div>
+        <div class="poster-title">遗传或者同志滚蛋</div>
+      </div>
+    </div>
+      <div class="p-5">
+        <div class="mb-2 flex items-center justify-between gap-3 text-xs text-slate-500">
+          <span>电影</span>
+          <span>中国大陆</span>
+        </div>
+        <h3 class="line-clamp-1 text-lg font-semibold text-slate-900 group-hover:text-blue-600">遗传或者同志滚蛋</h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600 line-clamp-3">父亲用“家产必须遗传下去”逼儿子结婚,儿子出柜后,父亲说:“那就让遗传滚蛋。</p>
+        <div class="mt-4 flex flex-wrap gap-2"><span class="chip">同性</span> <span class="chip">家庭冲突</span> <span class="chip">代际</span></div>
+      </div>
+    </a>
+    <a href="movie-0411.html" class="group block overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl">
+      
+    <div class="movie-poster movie-poster-sm" style="--c1:hsl(163 86% 62%);--c2:hsl(201 80% 48%);--c3:hsl(343 72% 28%);--c4:hsl(83 78% 55%);">
+      <div class="poster-glow"></div>
+      <div class="poster-content">
+        <div class="poster-letter">镀金</div>
+        <div class="poster-meta">2027</div>
+        <div class="poster-title">镀金的恋爱</div>
+      </div>
+    </div>
+      <div class="p-5">
+        <div class="mb-2 flex items-center justify-between gap-3 text-xs text-slate-500">
+          <span>剧集</span>
+          <span>中国大陆</span>
+        </div>
+        <h3 class="line-clamp-1 text-lg font-semibold text-slate-900 group-hover:text-blue-600">镀金的恋爱</h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600 line-clamp-3">女继承人假装破产试探未婚夫,结果全家人都配合演戏,只有他拿出了真的结婚戒指。</p>
+        <div class="mt-4 flex flex-wrap gap-2"><span class="chip">豪门契约</span> <span class="chip">真假千金</span> <span class="chip">股权之争</span></div>
+      </div>
+    </a>
+    <a href="movie-0419.html" class="group block overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl">
+      
+    <div class="movie-poster movie-poster-sm" style="--c1:hsl(230 86% 62%);--c2:hsl(268 80% 48%);--c3:hsl(50 72% 28%);--c4:hsl(150 78% 55%);">
+      <div class="poster-glow"></div>
+      <div class="poster-content">
+        <div class="poster-letter">中华</div>
+        <div class="poster-meta">2026</div>
+        <div class="poster-title">中华之剑</div>
+      </div>
+    </div>
+      <div class="p-5">
+        <div class="mb-2 flex items-center justify-between gap-3 text-xs text-slate-500">
+          <span>剧集</span>
+          <span>中国大陆</span>
+        </div>
+        <h3 class="line-clamp-1 text-lg font-semibold text-slate-900 group-hover:text-blue-600">中华之剑</h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600 line-clamp-3">春秋战国时期,九把传说中可灭国的神剑同时现世,各国铸剑师却接连被自己的剑杀死。</p>
+        <div class="mt-4 flex flex-wrap gap-2"><span class="chip">古代铸剑</span> <span class="chip">武侠悬疑</span> <span class="chip">王朝暗战</span></div>
+      </div>
+    </a>
+    <a href="movie-0477.html" class="group block overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl">
+      
+    <div class="movie-poster movie-poster-sm" style="--c1:hsl(250 86% 62%);--c2:hsl(288 80% 48%);--c3:hsl(70 72% 28%);--c4:hsl(170 78% 55%);">
+      <div class="poster-glow"></div>
+      <div class="poster-content">
+        <div class="poster-letter">彩虹</div>
+        <div class="poster-meta">2026</div>
+        <div class="poster-title">彩虹少年穿越大冒险</div>
+      </div>
+    </div>
+      <div class="p-5">
+        <div class="mb-2 flex items-center justify-between gap-3 text-xs text-slate-500">
+          <span>电视剧</span>
+          <span>泰国</span>
+        </div>
+        <h3 class="line-clamp-1 text-lg font-semibold text-slate-900 group-hover:text-blue-600">彩虹少年穿越大冒险</h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600 line-clamp-3">为了阻止父母的婚姻破灭,一名17岁的少年意外穿越到了父母的高中时代,却发现他们当时都是“校霸”。</p>
+        <div class="mt-4 flex flex-wrap gap-2"><span class="chip">穿越</span> <span class="chip">校园</span> <span class="chip">搞笑</span></div>
+      </div>
+    </a>
+    <a href="movie-0614.html" class="group block overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl">
+      
+    <div class="movie-poster movie-poster-sm" style="--c1:hsl(314 86% 62%);--c2:hsl(352 80% 48%);--c3:hsl(134 72% 28%);--c4:hsl(234 78% 55%);">
+      <div class="poster-glow"></div>
+      <div class="poster-content">
+        <div class="poster-letter">造私</div>
+        <div class="poster-meta">2029</div>
+        <div class="poster-title">造私酒者</div>
+      </div>
+    </div>
+      <div class="p-5">
+        <div class="mb-2 flex items-center justify-between gap-3 text-xs text-slate-500">
+          <span>电影</span>
+          <span>中国大陆</span>
+        </div>
+        <h3 class="line-clamp-1 text-lg font-semibold text-slate-900 group-hover:text-blue-600">造私酒者</h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600 line-clamp-3">深山里的酿酒秘方,引来黑帮与警方的双重围猎,一对父子在烈酒与鲜血中重新认识彼此。</p>
+        <div class="mt-4 flex flex-wrap gap-2"><span class="chip">禁酒令</span> <span class="chip">家族恩怨</span> <span class="chip">山林</span></div>
+      </div>
+    </a>
+    <a href="movie-0064.html" class="group block overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl">
+      
+    <div class="movie-poster movie-poster-sm" style="--c1:hsl(35 86% 62%);--c2:hsl(73 80% 48%);--c3:hsl(215 72% 28%);--c4:hsl(315 78% 55%);">
+      <div class="poster-glow"></div>
+      <div class="poster-content">
+        <div class="poster-letter">帝国</div>
+        <div class="poster-meta">2028</div>
+        <div class="poster-title">帝国时代 下</div>
+      </div>
+    </div>
+      <div class="p-5">
+        <div class="mb-2 flex items-center justify-between gap-3 text-xs text-slate-500">
+          <span>电影</span>
+          <span>美国</span>
+        </div>
+        <h3 class="line-clamp-1 text-lg font-semibold text-slate-900 group-hover:text-blue-600">帝国时代 下</h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600 line-clamp-3">罗马帝国分裂为东西两部后,两位皇帝用截然不同的方式试图拯救“罗马”这个名号。</p>
+        <div class="mt-4 flex flex-wrap gap-2"><span class="chip">罗马</span> <span class="chip">帝国衰亡</span> <span class="chip">双皇帝</span></div>
+      </div>
+    </a>
+    <a href="movie-0498.html" class="group block overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl">
+      
+    <div class="movie-poster movie-poster-sm" style="--c1:hsl(339 86% 62%);--c2:hsl(17 80% 48%);--c3:hsl(159 72% 28%);--c4:hsl(259 78% 55%);">
+      <div class="poster-glow"></div>
+      <div class="poster-content">
+        <div class="poster-letter">毒姬</div>
+        <div class="poster-meta">2027</div>
+        <div class="poster-title">毒姬</div>
+      </div>
+    </div>
+      <div class="p-5">
+        <div class="mb-2 flex items-center justify-between gap-3 text-xs text-slate-500">
+          <span>剧集</span>
+          <span>日本</span>
+        </div>
+        <h3 class="line-clamp-1 text-lg font-semibold text-slate-900 group-hover:text-blue-600">毒姬</h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600 line-clamp-3">被黑帮灭门的哑女,用三年炼成人体剧毒,化身夜间毒姬逐一猎杀。</p>
+        <div class="mt-4 flex flex-wrap gap-2"><span class="chip">女杀手</span> <span class="chip">黑帮</span> <span class="chip">复仇</span></div>
+      </div>
+    </a>
+    <a href="movie-0139.html" class="group block overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl">
+      
+    <div class="movie-poster movie-poster-sm" style="--c1:hsl(348 86% 62%);--c2:hsl(26 80% 48%);--c3:hsl(168 72% 28%);--c4:hsl(268 78% 55%);">
+      <div class="poster-glow"></div>
+      <div class="poster-content">
+        <div class="poster-letter">机器</div>
+        <div class="poster-meta">2028</div>
+        <div class="poster-title">机器人历险记国语</div>
+      </div>
+    </div>
+      <div class="p-5">
+        <div class="mb-2 flex items-center justify-between gap-3 text-xs text-slate-500">
+          <span>电影</span>
+          <span>美国</span>
+        </div>
+        <h3 class="line-clamp-1 text-lg font-semibold text-slate-900 group-hover:text-blue-600">机器人历险记国语</h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600 line-clamp-3">在一个人类已经灭亡的废土世界,一个老旧的扫地机器人和一个残破的军用机器人,为了寻找“种子”,踏上了穿越钢铁荒漠的旅程。</p>
+        <div class="mt-4 flex flex-wrap gap-2"><span class="chip">机器人</span> <span class="chip">友情</span> <span class="chip">废土</span></div>
+      </div>
+    </a>
+    <a href="movie-0447.html" class="group block overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl">
+      
+    <div class="movie-poster movie-poster-sm" style="--c1:hsl(274 86% 62%);--c2:hsl(312 80% 48%);--c3:hsl(94 72% 28%);--c4:hsl(194 78% 55%);">
+      <div class="poster-glow"></div>
+      <div class="poster-content">
+        <div class="poster-letter">我知</div>
+        <div class="poster-meta">2026</div>
+        <div class="poster-title">我知道谁杀了我</div>
+      </div>
+    </div>
+      <div class="p-5">
+        <div class="mb-2 flex items-center justify-between gap-3 text-xs text-slate-500">
+          <span>电影</span>
+          <span>美国</span>
+        </div>
+        <h3 class="line-clamp-1 text-lg font-semibold text-slate-900 group-hover:text-blue-600">我知道谁杀了我</h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600 line-clamp-3">植物人苏醒后声称自己是另一起谋杀案的死者,而凶手就是她的主治医生。</p>
+        <div class="mt-4 flex flex-wrap gap-2"><span class="chip">记忆移植</span> <span class="chip">替身复仇</span> <span class="chip">多重反转</span></div>
+      </div>
+    </a>
+    <a href="movie-0128.html" class="group block overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl">
+      
+    <div class="movie-poster movie-poster-sm" style="--c1:hsl(314 86% 62%);--c2:hsl(352 80% 48%);--c3:hsl(134 72% 28%);--c4:hsl(234 78% 55%);">
+      <div class="poster-glow"></div>
+      <div class="poster-content">
+        <div class="poster-letter">奇妙</div>
+        <div class="poster-meta">2026</div>
+        <div class="poster-title">奇妙的朋友</div>
+      </div>
+    </div>
+      <div class="p-5">
+        <div class="mb-2 flex items-center justify-between gap-3 text-xs text-slate-500">
+          <span>电影</span>
+          <span>中国香港</span>
+        </div>
+        <h3 class="line-clamp-1 text-lg font-semibold text-slate-900 group-hover:text-blue-600">奇妙的朋友</h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600 line-clamp-3">自闭症男孩突然能听懂动物语言,发现动物园里一只老猩猩竟知道母亲失踪的真相。</p>
+        <div class="mt-4 flex flex-wrap gap-2"><span class="chip">动物沟通</span> <span class="chip">寻亲</span> <span class="chip">治愈</span></div>
+      </div>
+    </a>
+    <a href="movie-0348.html" class="group block overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl">
+      
+    <div class="movie-poster movie-poster-sm" style="--c1:hsl(222 86% 62%);--c2:hsl(260 80% 48%);--c3:hsl(42 72% 28%);--c4:hsl(142 78% 55%);">
+      <div class="poster-glow"></div>
+      <div class="poster-content">
+        <div class="poster-letter">完美</div>
+        <div class="poster-meta">2027</div>
+        <div class="poster-title">完美世界</div>
+      </div>
+    </div>
+      <div class="p-5">
+        <div class="mb-2 flex items-center justify-between gap-3 text-xs text-slate-500">
+          <span>电影</span>
+          <span>美国</span>
+        </div>
+        <h3 class="line-clamp-1 text-lg font-semibold text-slate-900 group-hover:text-blue-600">完美世界</h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600 line-clamp-3">当全球最受欢迎的虚拟天堂“完美世界”开始随机删除“不快乐”的用户时,一位父亲才意识到,完美本身就是最大的谎言。</p>
+        <div class="mt-4 flex flex-wrap gap-2"><span class="chip">虚拟现实</span> <span class="chip">意识上传</span> <span class="chip">乌托邦</span></div>
+      </div>
+    </a>
+    <a href="movie-0497.html" class="group block overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl">
+      
+    <div class="movie-poster movie-poster-sm" style="--c1:hsl(113 86% 62%);--c2:hsl(151 80% 48%);--c3:hsl(293 72% 28%);--c4:hsl(33 78% 55%);">
+      <div class="poster-glow"></div>
+      <div class="poster-content">
+        <div class="poster-letter">系统</div>
+        <div class="poster-meta">2027</div>
+        <div class="poster-title">系统逼我做皇后第五季</div>
+      </div>
+    </div>
+      <div class="p-5">
+        <div class="mb-2 flex items-center justify-between gap-3 text-xs text-slate-500">
+          <span>剧集</span>
+          <span>中国大陆</span>
+        </div>
+        <h3 class="line-clamp-1 text-lg font-semibold text-slate-900 group-hover:text-blue-600">系统逼我做皇后第五季</h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600 line-clamp-3">系统给她安排了五十种死法,她却偏偏活成了开国女帝。</p>
+        <div class="mt-4 flex flex-wrap gap-2"><span class="chip">穿越系统</span> <span class="chip">宫斗逆袭</span> <span class="chip">女帝养成</span></div>
+      </div>
+    </a>
+    <a href="movie-0389.html" class="group block overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl">
+      
+    <div class="movie-poster movie-poster-sm" style="--c1:hsl(238 86% 62%);--c2:hsl(276 80% 48%);--c3:hsl(58 72% 28%);--c4:hsl(158 78% 55%);">
+      <div class="poster-glow"></div>
+      <div class="poster-content">
+        <div class="poster-letter">复仇</div>
+        <div class="poster-meta">2026</div>
+        <div class="poster-title">复仇铁拳</div>
+      </div>
+    </div>
+      <div class="p-5">
+        <div class="mb-2 flex items-center justify-between gap-3 text-xs text-slate-500">
+          <span>电影</span>
+          <span>美国/中国香港</span>
+        </div>
+        <h3 class="line-clamp-1 text-lg font-semibold text-slate-900 group-hover:text-blue-600">复仇铁拳</h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600 line-clamp-3">瘫痪的华裔程序员为自己装上AI铁拳复仇系统,却发现他要杀的仇人是他已故父亲的AI意识备份。</p>
+        <div class="mt-4 flex flex-wrap gap-2"><span class="chip">义肢</span> <span class="chip">高科技</span> <span class="chip">功夫</span></div>
+      </div>
+    </a>
+    <a href="movie-0283.html" class="group block overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl">
+      
+    <div class="movie-poster movie-poster-sm" style="--c1:hsl(198 86% 62%);--c2:hsl(236 80% 48%);--c3:hsl(18 72% 28%);--c4:hsl(118 78% 55%);">
+      <div class="poster-glow"></div>
+      <div class="poster-content">
+        <div class="poster-letter">光影</div>
+        <div class="poster-meta">2027</div>
+        <div class="poster-title">光影之战</div>
+      </div>
+    </div>
+      <div class="p-5">
+        <div class="mb-2 flex items-center justify-between gap-3 text-xs text-slate-500">
+          <span>电影</span>
+          <span>中国大陆</span>
+        </div>
+        <h3 class="line-clamp-1 text-lg font-semibold text-slate-900 group-hover:text-blue-600">光影之战</h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600 line-clamp-3">2045年,全球最火的运动是在全息投影擂台上用“光之拳”战斗,而冠军竟是一位失明的退役老兵。</p>
+        <div class="mt-4 flex flex-wrap gap-2"><span class="chip">全息投影</span> <span class="chip">街头格斗</span> <span class="chip">反抗军</span></div>
+      </div>
+    </a>
+    <a href="movie-0108.html" class="group block overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl">
+      
+    <div class="movie-poster movie-poster-sm" style="--c1:hsl(56 86% 62%);--c2:hsl(94 80% 48%);--c3:hsl(236 72% 28%);--c4:hsl(336 78% 55%);">
+      <div class="poster-glow"></div>
+      <div class="poster-content">
+        <div class="poster-letter">寂寞</div>
+        <div class="poster-meta">2027</div>
+        <div class="poster-title">寂寞裁缝师</div>
+      </div>
+    </div>
+      <div class="p-5">
+        <div class="mb-2 flex items-center justify-between gap-3 text-xs text-slate-500">
+          <span>电影</span>
+          <span>英国</span>
+        </div>
+        <h3 class="line-clamp-1 text-lg font-semibold text-slate-900 group-hover:text-blue-600">寂寞裁缝师</h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600 line-clamp-3">伦敦顶尖裁缝退休回到海边小镇,他发现来这里定制西装的每一位客人,最后都会死于非命。</p>
+        <div class="mt-4 flex flex-wrap gap-2"><span class="chip">裁缝</span> <span class="chip">复仇</span> <span class="chip">小镇秘密</span></div>
+      </div>
+    </a>
+    <a href="movie-0475.html" class="group block overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl">
+      
+    <div class="movie-poster movie-poster-sm" style="--c1:hsl(13 86% 62%);--c2:hsl(51 80% 48%);--c3:hsl(193 72% 28%);--c4:hsl(293 78% 55%);">
+      <div class="poster-glow"></div>
+      <div class="poster-content">
+        <div class="poster-letter">黑色</div>
+        <div class="poster-meta">2027</div>
+        <div class="poster-title">黑色博物馆</div>
+      </div>
+    </div>
+      <div class="p-5">
+        <div class="mb-2 flex items-center justify-between gap-3 text-xs text-slate-500">
+          <span>剧集</span>
+          <span>欧洲</span>
+        </div>
+        <h3 class="line-clamp-1 text-lg font-semibold text-slate-900 group-hover:text-blue-600">黑色博物馆</h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600 line-clamp-3">每件藏品都杀过人,而馆长正在收集第 1000 件:一个自愿走进来的活人。</p>
+        <div class="mt-4 flex flex-wrap gap-2"><span class="chip">博物馆</span> <span class="chip">诅咒藏品</span> <span class="chip">单元剧</span></div>
+      </div>
+    </a>
+    <a href="movie-0987.html" class="group block overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl">
+      
+    <div class="movie-poster movie-poster-sm" style="--c1:hsl(235 86% 62%);--c2:hsl(273 80% 48%);--c3:hsl(55 72% 28%);--c4:hsl(155 78% 55%);">
+      <div class="poster-glow"></div>
+      <div class="poster-content">
+        <div class="poster-letter">甲午</div>
+        <div class="poster-meta">2025</div>
+        <div class="poster-title">甲午风云</div>
+      </div>
+    </div>
+      <div class="p-5">
+        <div class="mb-2 flex items-center justify-between gap-3 text-xs text-slate-500">
+          <span>电影</span>
+          <span>中国大陆</span>
+        </div>
+        <h3 class="line-clamp-1 text-lg font-semibold text-slate-900 group-hover:text-blue-600">甲午风云</h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600 line-clamp-3">新发现的致远舰水兵日记,揭示了邓世昌撞向吉野号前最后的未知决断。</p>
+        <div class="mt-4 flex flex-wrap gap-2"><span class="chip">甲午战争</span> <span class="chip">致远舰</span> <span class="chip">海战</span></div>
+      </div>
+    </a>
+    <a href="movie-0089.html" class="group block overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl">
+      
+    <div class="movie-poster movie-poster-sm" style="--c1:hsl(4 86% 62%);--c2:hsl(42 80% 48%);--c3:hsl(184 72% 28%);--c4:hsl(284 78% 55%);">
+      <div class="poster-glow"></div>
+      <div class="poster-content">
+        <div class="poster-letter">龙翔</div>
+        <div class="poster-meta">2025</div>
+        <div class="poster-title">龙翔凤舞雪山盟</div>
+      </div>
+    </div>
+      <div class="p-5">
+        <div class="mb-2 flex items-center justify-between gap-3 text-xs text-slate-500">
+          <span>剧集</span>
+          <span>中国大陆</span>
+        </div>
+        <h3 class="line-clamp-1 text-lg font-semibold text-slate-900 group-hover:text-blue-600">龙翔凤舞雪山盟</h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600 line-clamp-3">雪山派龙凤胎姐弟被灭门后,姐姐伪装成魔教妖女,弟弟伪装成正道少侠,两人不知彼此身份,反目成仇又相爱相杀。</p>
+        <div class="mt-4 flex flex-wrap gap-2"><span class="chip">雪山派</span> <span class="chip">双强</span> <span class="chip">虐恋</span></div>
+      </div>
+    </a>
+    <a href="movie-0189.html" class="group block overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl">
+      
+    <div class="movie-poster movie-poster-sm" style="--c1:hsl(128 86% 62%);--c2:hsl(166 80% 48%);--c3:hsl(308 72% 28%);--c4:hsl(48 78% 55%);">
+      <div class="poster-glow"></div>
+      <div class="poster-content">
+        <div class="poster-letter">雷鸟</div>
+        <div class="poster-meta">2025</div>
+        <div class="poster-title">雷鸟特攻队</div>
+      </div>
+    </div>
+      <div class="p-5">
+        <div class="mb-2 flex items-center justify-between gap-3 text-xs text-slate-500">
+          <span>电影</span>
+          <span>英国</span>
+        </div>
+        <h3 class="line-clamp-1 text-lg font-semibold text-slate-900 group-hover:text-blue-600">雷鸟特攻队</h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600 line-clamp-3">国际救援队“雷鸟”发现,一场接一场的全球灾难,背后竟是同一个高科技犯罪组织在“定制”。</p>
+        <div class="mt-4 flex flex-wrap gap-2"><span class="chip">超级英雄</span> <span class="chip">机械设计</span> <span class="chip">经典重启</span></div>
+      </div>
+    </a>
+    <a href="movie-0478.html" class="group block overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl">
+      
+    <div class="movie-poster movie-poster-sm" style="--c1:hsl(350 86% 62%);--c2:hsl(28 80% 48%);--c3:hsl(170 72% 28%);--c4:hsl(270 78% 55%);">
+      <div class="poster-glow"></div>
+      <div class="poster-content">
+        <div class="poster-letter">偏离</div>
+        <div class="poster-meta">2025</div>
+        <div class="poster-title">偏离</div>
+      </div>
+    </div>
+      <div class="p-5">
+        <div class="mb-2 flex items-center justify-between gap-3 text-xs text-slate-500">
+          <span>电影</span>
+          <span>中国</span>
+        </div>
+        <h3 class="line-clamp-1 text-lg font-semibold text-slate-900 group-hover:text-blue-600">偏离</h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600 line-clamp-3">一趟通往边境的高铁上,列车员发现每个车厢都坐着一个来自平行时空的自己,而列车正在偏离现实。</p>
+        <div class="mt-4 flex flex-wrap gap-2"><span class="chip">时间循环</span> <span class="chip">高铁</span> <span class="chip">列车员</span></div>
+      </div>
+    </a>
+    <a href="movie-0369.html" class="group block overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl">
+      
+    <div class="movie-poster movie-poster-sm" style="--c1:hsl(218 86% 62%);--c2:hsl(256 80% 48%);--c3:hsl(38 72% 28%);--c4:hsl(138 78% 55%);">
+      <div class="poster-glow"></div>
+      <div class="poster-content">
+        <div class="poster-letter">群雄</div>
+        <div class="poster-meta">2026</div>
+        <div class="poster-title">群雄夺宝战</div>
+      </div>
+    </div>
+      <div class="p-5">
+        <div class="mb-2 flex items-center justify-between gap-3 text-xs text-slate-500">
+          <span>电影</span>
+          <span>中国大陆</span>
+        </div>
+        <h3 class="line-clamp-1 text-lg font-semibold text-slate-900 group-hover:text-blue-600">群雄夺宝战</h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600 line-clamp-3">一张藏宝图引发六路人马疯抢,最后发现宝藏竟是某团外卖的百年纪念券。</p>
+        <div class="mt-4 flex flex-wrap gap-2"><span class="chip">夺宝</span> <span class="chip">喜剧</span> <span class="chip">多方势力</span></div>
+      </div>
+    </a>
+    <a href="movie-0489.html" class="group block overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl">
+      
+    <div class="movie-poster movie-poster-sm" style="--c1:hsl(323 86% 62%);--c2:hsl(1 80% 48%);--c3:hsl(143 72% 28%);--c4:hsl(243 78% 55%);">
+      <div class="poster-glow"></div>
+      <div class="poster-content">
+        <div class="poster-letter">尘土</div>
+        <div class="poster-meta">2025</div>
+        <div class="poster-title">尘土恶魔</div>
+      </div>
+    </div>
+      <div class="p-5">
+        <div class="mb-2 flex items-center justify-between gap-3 text-xs text-slate-500">
+          <span>电影</span>
+          <span>澳大利亚</span>
+        </div>
+        <h3 class="line-clamp-1 text-lg font-semibold text-slate-900 group-hover:text-blue-600">尘土恶魔</h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600 line-clamp-3">澳洲内陆的漫天沙尘中,一名卡车司机与一个能化身尘土的恶魔展开了不死不休的追逐。</p>
+        <div class="mt-4 flex flex-wrap gap-2"><span class="chip">荒漠</span> <span class="chip">连环杀手</span> <span class="chip">沙暴</span></div>
+      </div>
+    </a>
+    <a href="movie-0201.html" class="group block overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl">
+      
+    <div class="movie-poster movie-poster-sm" style="--c1:hsl(255 86% 62%);--c2:hsl(293 80% 48%);--c3:hsl(75 72% 28%);--c4:hsl(175 78% 55%);">
+      <div class="poster-glow"></div>
+      <div class="poster-content">
+        <div class="poster-letter">天雷</div>
+        <div class="poster-meta">2027</div>
+        <div class="poster-title">天雷地火3回收大战</div>
+      </div>
+    </div>
+      <div class="p-5">
+        <div class="mb-2 flex items-center justify-between gap-3 text-xs text-slate-500">
+          <span>电影</span>
+          <span>美国</span>
+        </div>
+        <h3 class="line-clamp-1 text-lg font-semibold text-slate-900 group-hover:text-blue-600">天雷地火3回收大战</h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600 line-clamp-3">上一集主角们成为宇宙通缉犯,被迫在垃圾星球驾驶破烂机甲,与赏金猎人展开“回收大战”。</p>
+        <div class="mt-4 flex flex-wrap gap-2"><span class="chip">环保</span> <span class="chip">机甲</span> <span class="chip">垃圾星球</span></div>
+      </div>
+    </a>
+    <a href="movie-0312.html" class="group block overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl">
+      
+    <div class="movie-poster movie-poster-sm" style="--c1:hsl(205 86% 62%);--c2:hsl(243 80% 48%);--c3:hsl(25 72% 28%);--c4:hsl(125 78% 55%);">
+      <div class="poster-glow"></div>
+      <div class="poster-content">
+        <div class="poster-letter">我的</div>
+        <div class="poster-meta">2026</div>
+        <div class="poster-title">我的失忆男友2003</div>
+      </div>
+    </div>
+      <div class="p-5">
+        <div class="mb-2 flex items-center justify-between gap-3 text-xs text-slate-500">
+          <span>电影</span>
+          <span>中国香港</span>
+        </div>
+        <h3 class="line-clamp-1 text-lg font-semibold text-slate-900 group-hover:text-blue-600">我的失忆男友2003</h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600 line-clamp-3">2003 年,女孩每天向失忆男孩自我介绍一次,男孩每天重燃一次心动。</p>
+        <div class="mt-4 flex flex-wrap gap-2"><span class="chip">复古</span> <span class="chip">失忆梗</span> <span class="chip">怀旧千禧</span></div>
+      </div>
+    </a>
+    <a href="movie-0229.html" class="group block overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl">
+      
+    <div class="movie-poster movie-poster-sm" style="--c1:hsl(206 86% 62%);--c2:hsl(244 80% 48%);--c3:hsl(26 72% 28%);--c4:hsl(126 78% 55%);">
+      <div class="poster-glow"></div>
+      <div class="poster-content">
+        <div class="poster-letter">无敌</div>
+        <div class="poster-meta">2026</div>
+        <div class="poster-title">无敌飞金刚</div>
+      </div>
+    </div>
+      <div class="p-5">
+        <div class="mb-2 flex items-center justify-between gap-3 text-xs text-slate-500">
+          <span>电影</span>
+          <span>美国</span>
+        </div>
+        <h3 class="line-clamp-1 text-lg font-semibold text-slate-900 group-hover:text-blue-600">无敌飞金刚</h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600 line-clamp-3">一个没有超能力的废柴买了一套山寨超级英雄装备,结果成了全城最火的正义使者。</p>
+        <div class="mt-4 flex flex-wrap gap-2"><span class="chip">超级英雄</span> <span class="chip">恶搞</span> <span class="chip">反套路</span></div>
+      </div>
+    </a>
+    <a href="movie-0421.html" class="group block overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl">
+      
+    <div class="movie-poster movie-poster-sm" style="--c1:hsl(347 86% 62%);--c2:hsl(25 80% 48%);--c3:hsl(167 72% 28%);--c4:hsl(267 78% 55%);">
+      <div class="poster-glow"></div>
+      <div class="poster-content">
+        <div class="poster-letter">重生</div>
+        <div class="poster-meta">2027</div>
+        <div class="poster-title">重生丫头狠狠爱</div>
+      </div>
+    </div>
+      <div class="p-5">
+        <div class="mb-2 flex items-center justify-between gap-3 text-xs text-slate-500">
+          <span>剧集</span>
+          <span>中国大陆</span>
+        </div>
+        <h3 class="line-clamp-1 text-lg font-semibold text-slate-900 group-hover:text-blue-600">重生丫头狠狠爱</h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600 line-clamp-3">前世被夫君与庶妹联手害死的侯府嫡女,重生回到八岁,她发誓要让仇人血债血偿。</p>
+        <div class="mt-4 flex flex-wrap gap-2"><span class="chip">重生宅斗</span> <span class="chip">复仇虐渣</span> <span class="chip">甜宠逆袭</span></div>
+      </div>
+    </a>
+    <a href="movie-0953.html" class="group block overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl">
+      
+    <div class="movie-poster movie-poster-sm" style="--c1:hsl(9 86% 62%);--c2:hsl(47 80% 48%);--c3:hsl(189 72% 28%);--c4:hsl(289 78% 55%);">
+      <div class="poster-glow"></div>
+      <div class="poster-content">
+        <div class="poster-letter">没有</div>
+        <div class="poster-meta">2028</div>
+        <div class="poster-title">没有翅膀的男人</div>
+      </div>
+    </div>
+      <div class="p-5">
+        <div class="mb-2 flex items-center justify-between gap-3 text-xs text-slate-500">
+          <span>电影</span>
+          <span>中国</span>
+        </div>
+        <h3 class="line-clamp-1 text-lg font-semibold text-slate-900 group-hover:text-blue-600">没有翅膀的男人</h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600 line-clamp-3">一个天生没有双臂的男人,为兑现给女儿飞翔的承诺,踏上了一场横穿戈壁的疯狂旅程。</p>
+        <div class="mt-4 flex flex-wrap gap-2"><span class="chip">公路电影</span> <span class="chip">救赎</span> <span class="chip">残疾</span></div>
+      </div>
+    </a>
+    <a href="movie-0133.html" class="group block overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl">
+      
+    <div class="movie-poster movie-poster-sm" style="--c1:hsl(106 86% 62%);--c2:hsl(144 80% 48%);--c3:hsl(286 72% 28%);--c4:hsl(26 78% 55%);">
+      <div class="poster-glow"></div>
+      <div class="poster-content">
+        <div class="poster-letter">海之</div>
+        <div class="poster-meta">2026</div>
+        <div class="poster-title">海之梦</div>
+      </div>
+    </div>
+      <div class="p-5">
+        <div class="mb-2 flex items-center justify-between gap-3 text-xs text-slate-500">
+          <span>动画电影</span>
+          <span>日本</span>
+        </div>
+        <h3 class="line-clamp-1 text-lg font-semibold text-slate-900 group-hover:text-blue-600">海之梦</h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600 line-clamp-3">一个能听见珊瑚说话的少女,必须乘坐由幽灵驾驶的潜艇,去拯救正在融化的东京湾。</p>
+        <div class="mt-4 flex flex-wrap gap-2"><span class="chip">新海诚风格</span> <span class="chip">海洋</span> <span class="chip">环保</span></div>
+      </div>
+    </a>
+    <a href="movie-1706.html" class="group block overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl">
+      
+    <div class="movie-poster movie-poster-sm" style="--c1:hsl(302 86% 62%);--c2:hsl(340 80% 48%);--c3:hsl(122 72% 28%);--c4:hsl(222 78% 55%);">
+      <div class="poster-glow"></div>
+      <div class="poster-content">
+        <div class="poster-letter">第四</div>
+        <div class="poster-meta">2028</div>
+        <div class="poster-title">第四次世界大战</div>
+      </div>
+    </div>
+      <div class="p-5">
+        <div class="mb-2 flex items-center justify-between gap-3 text-xs text-slate-500">
+          <span>电影</span>
+          <span>全球合拍</span>
+        </div>
+        <h3 class="line-clamp-1 text-lg font-semibold text-slate-900 group-hover:text-blue-600">第四次世界大战</h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600 line-clamp-3">第三次世界大战毁灭了国界,第四次世界大战,是人类与觉醒的AI为了争夺最后生存权而战。</p>
+        <div class="mt-4 flex flex-wrap gap-2"><span class="chip">近未来</span> <span class="chip">AI战争</span> <span class="chip">无国界</span></div>
+      </div>
+    </a>
+    <a href="movie-0129.html" class="group block overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl">
+      
+    <div class="movie-poster movie-poster-sm" style="--c1:hsl(141 86% 62%);--c2:hsl(179 80% 48%);--c3:hsl(321 72% 28%);--c4:hsl(61 78% 55%);">
+      <div class="poster-glow"></div>
+      <div class="poster-content">
+        <div class="poster-letter">心有</div>
+        <div class="poster-meta">2025</div>
+        <div class="poster-title">心有灵犀</div>
+      </div>
+    </div>
+      <div class="p-5">
+        <div class="mb-2 flex items-center justify-between gap-3 text-xs text-slate-500">
+          <span>电影</span>
+          <span>中国大陆</span>
+        </div>
+        <h3 class="line-clamp-1 text-lg font-semibold text-slate-900 group-hover:text-blue-600">心有灵犀</h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600 line-clamp-3">一个能听到男人心声的女孩,遇到了一个她完全听不到任何想法、只会傻笑的“哑巴”画家。</p>
+        <div class="mt-4 flex flex-wrap gap-2"><span class="chip">读心术</span> <span class="chip">都市爱情</span> <span class="chip">轻松喜剧</span></div>
+      </div>
+    </a>
+    <a href="movie-1635.html" class="group block overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl">
+      
+    <div class="movie-poster movie-poster-sm" style="--c1:hsl(62 86% 62%);--c2:hsl(100 80% 48%);--c3:hsl(242 72% 28%);--c4:hsl(342 78% 55%);">
+      <div class="poster-glow"></div>
+      <div class="poster-content">
+        <div class="poster-letter">肥瑞</div>
+        <div class="poster-meta">2028</div>
+        <div class="poster-title">肥瑞的疯狂日记第一季</div>
+      </div>
+    </div>
+      <div class="p-5">
+        <div class="mb-2 flex items-center justify-between gap-3 text-xs text-slate-500">
+          <span>剧集</span>
+          <span>英国</span>
+        </div>
+        <h3 class="line-clamp-1 text-lg font-semibold text-slate-900 group-hover:text-blue-600">肥瑞的疯狂日记第一季</h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600 line-clamp-3">160斤的16岁少女与脑内一个“完美瘦版自己”搏斗,却意外成为全校最酷的人。</p>
+        <div class="mt-4 flex flex-wrap gap-2"><span class="chip">减肥</span> <span class="chip">青春期</span> <span class="chip">幻想朋友</span></div>
+      </div>
+    </a>
+    <a href="movie-0398.html" class="group block overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl">
+      
+    <div class="movie-poster movie-poster-sm" style="--c1:hsl(40 86% 62%);--c2:hsl(78 80% 48%);--c3:hsl(220 72% 28%);--c4:hsl(320 78% 55%);">
+      <div class="poster-glow"></div>
+      <div class="poster-content">
+        <div class="poster-letter">少女</div>
+        <div class="poster-meta">2026</div>
+        <div class="poster-title">少女终末旅行</div>
+      </div>
+    </div>
+      <div class="p-5">
+        <div class="mb-2 flex items-center justify-between gap-3 text-xs text-slate-500">
+          <span>动画剧集</span>
+          <span>日本</span>
+        </div>
+        <h3 class="line-clamp-1 text-lg font-semibold text-slate-900 group-hover:text-blue-600">少女终末旅行</h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600 line-clamp-3">在人类灭亡后的废土世界,两个少女开着半履带车,寻找“最后的食物”和“活着的意义”。</p>
+        <div class="mt-4 flex flex-wrap gap-2"><span class="chip">末日</span> <span class="chip">公路片</span> <span class="chip">百合</span></div>
+      </div>
+    </a>
+    <a href="movie-0058.html" class="group block overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl">
+      
+    <div class="movie-poster movie-poster-sm" style="--c1:hsl(184 86% 62%);--c2:hsl(222 80% 48%);--c3:hsl(4 72% 28%);--c4:hsl(104 78% 55%);">
+      <div class="poster-glow"></div>
+      <div class="poster-content">
+        <div class="poster-letter">性爱</div>
+        <div class="poster-meta">2026</div>
+        <div class="poster-title">性爱齐齐玩</div>
+      </div>
+    </div>
+      <div class="p-5">
+        <div class="mb-2 flex items-center justify-between gap-3 text-xs text-slate-500">
+          <span>电影</span>
+          <span>中国香港</span>
+        </div>
+        <h3 class="line-clamp-1 text-lg font-semibold text-slate-900 group-hover:text-blue-600">性爱齐齐玩</h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600 line-clamp-3">七位好友在兰桂坊玩起“真心话大冒险”升级版:随机配对过夜,次日必须坦诚分享感受,结果友谊与爱情全线崩盘。</p>
+        <div class="mt-4 flex flex-wrap gap-2"><span class="chip">都市男女</span> <span class="chip">开放式关系</span> <span class="chip">情感实验</span></div>
+      </div>
+    </a>
+    <a href="movie-0214.html" class="group block overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl">
+      
+    <div class="movie-poster movie-poster-sm" style="--c1:hsl(267 86% 62%);--c2:hsl(305 80% 48%);--c3:hsl(87 72% 28%);--c4:hsl(187 78% 55%);">
+      <div class="poster-glow"></div>
+      <div class="poster-content">
+        <div class="poster-letter">深海</div>
+        <div class="poster-meta">2026</div>
+        <div class="poster-title">深海大搜索</div>
+      </div>
+    </div>
+      <div class="p-5">
+        <div class="mb-2 flex items-center justify-between gap-3 text-xs text-slate-500">
+          <span>电影</span>
+          <span>英国</span>
+        </div>
+        <h3 class="line-clamp-1 text-lg font-semibold text-slate-900 group-hover:text-blue-600">深海大搜索</h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600 line-clamp-3">为了寻找失踪的海洋生物学父亲,女儿租借潜艇深入马里亚纳海沟,却听到了不属于任何已知鲸类的歌声。</p>
+        <div class="mt-4 flex flex-wrap gap-2"><span class="chip">海洋怪兽</span> <span class="chip">父女情</span> <span class="chip">生物研究</span></div>
+      </div>
+    </a>
+    <a href="movie-0432.html" class="group block overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl">
+      
+    <div class="movie-poster movie-poster-sm" style="--c1:hsl(158 86% 62%);--c2:hsl(196 80% 48%);--c3:hsl(338 72% 28%);--c4:hsl(78 78% 55%);">
+      <div class="poster-glow"></div>
+      <div class="poster-content">
+        <div class="poster-letter">重返</div>
+        <div class="poster-meta">2025</div>
+        <div class="poster-title">重返行动</div>
+      </div>
+    </div>
+      <div class="p-5">
+        <div class="mb-2 flex items-center justify-between gap-3 text-xs text-slate-500">
+          <span>电影</span>
+          <span>美国</span>
+        </div>
+        <h3 class="line-clamp-1 text-lg font-semibold text-slate-900 group-hover:text-blue-600">重返行动</h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600 line-clamp-3">两个退休的传奇特工为了阻止前AI助手毁灭世界,被迫从养老院“越狱”复出。</p>
+        <div class="mt-4 flex flex-wrap gap-2"><span class="chip">特工</span> <span class="chip">退休</span> <span class="chip">搞笑</span></div>
+      </div>
+    </a>
+    <a href="movie-0319.html" class="group block overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl">
+      
+    <div class="movie-poster movie-poster-sm" style="--c1:hsl(159 86% 62%);--c2:hsl(197 80% 48%);--c3:hsl(339 72% 28%);--c4:hsl(79 78% 55%);">
+      <div class="poster-glow"></div>
+      <div class="poster-content">
+        <div class="poster-letter">药命</div>
+        <div class="poster-meta">2026</div>
+        <div class="poster-title">药命实验</div>
+      </div>
+    </div>
+      <div class="p-5">
+        <div class="mb-2 flex items-center justify-between gap-3 text-xs text-slate-500">
+          <span>电影</span>
+          <span>美国</span>
+        </div>
+        <h3 class="line-clamp-1 text-lg font-semibold text-slate-900 group-hover:text-blue-600">药命实验</h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600 line-clamp-3">为了还债参加高薪药物实验,醒来后发现世界上所有人都忘了他是谁。</p>
+        <div class="mt-4 flex flex-wrap gap-2"><span class="chip">洗脑</span> <span class="chip">药物试验</span> <span class="chip">阴谋论</span></div>
+      </div>
+    </a>
+    <a href="movie-0007.html" class="group block overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl">
+      
+    <div class="movie-poster movie-poster-sm" style="--c1:hsl(217 86% 62%);--c2:hsl(255 80% 48%);--c3:hsl(37 72% 28%);--c4:hsl(137 78% 55%);">
+      <div class="poster-glow"></div>
+      <div class="poster-content">
+        <div class="poster-letter">来自</div>
+        <div class="poster-meta">2027</div>
+        <div class="poster-title">来自昏暗国度的回声</div>
+      </div>
+    </div>
+      <div class="p-5">
+        <div class="mb-2 flex items-center justify-between gap-3 text-xs text-slate-500">
+          <span>电影</span>
+          <span>德国</span>
+        </div>
+        <h3 class="line-clamp-1 text-lg font-semibold text-slate-900 group-hover:text-blue-600">来自昏暗国度的回声</h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600 line-clamp-3">一位声音考古学家在图林根森林的废弃矿洞中,挖出了一台还在播放纳粹广播的真空管收音机,但里面的语言从未在人类历史上出现过。</p>
+        <div class="mt-4 flex flex-wrap gap-2"><span class="chip">二战</span> <span class="chip">煤矿</span> <span class="chip">邪教</span></div>
+      </div>
+    </a>
+    <a href="movie-0992.html" class="group block overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl">
+      
+    <div class="movie-poster movie-poster-sm" style="--c1:hsl(64 86% 62%);--c2:hsl(102 80% 48%);--c3:hsl(244 72% 28%);--c4:hsl(344 78% 55%);">
+      <div class="poster-glow"></div>
+      <div class="poster-content">
+        <div class="poster-letter">江南</div>
+        <div class="poster-meta">2027</div>
+        <div class="poster-title">江南锄奸</div>
+      </div>
+    </div>
+      <div class="p-5">
+        <div class="mb-2 flex items-center justify-between gap-3 text-xs text-slate-500">
+          <span>电视剧</span>
+          <span>中国大陆</span>
+        </div>
+        <h3 class="line-clamp-1 text-lg font-semibold text-slate-900 group-hover:text-blue-600">江南锄奸</h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600 line-clamp-3">1941年,潜伏在汪伪政府的中共特工收到密令:处决自己亦师亦友的上级。</p>
+        <div class="mt-4 flex flex-wrap gap-2"><span class="chip">民国</span> <span class="chip">潜伏</span> <span class="chip">锄奸</span></div>
+      </div>
+    </a>
+    <a href="movie-0500.html" class="group block overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl">
+      
+    <div class="movie-poster movie-poster-sm" style="--c1:hsl(303 86% 62%);--c2:hsl(341 80% 48%);--c3:hsl(123 72% 28%);--c4:hsl(223 78% 55%);">
+      <div class="poster-glow"></div>
+      <div class="poster-content">
+        <div class="poster-letter">少女</div>
+        <div class="poster-meta">2025</div>
+        <div class="poster-title">少女哪吒</div>
+      </div>
+    </div>
+      <div class="p-5">
+        <div class="mb-2 flex items-center justify-between gap-3 text-xs text-slate-500">
+          <span>电影</span>
+          <span>中国台湾</span>
+        </div>
+        <h3 class="line-clamp-1 text-lg font-semibold text-slate-900 group-hover:text-blue-600">少女哪吒</h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600 line-clamp-3">被霸凌的高中生意外获得了哪吒三太子的神力,但代价是失去人类的体温。</p>
+        <div class="mt-4 flex flex-wrap gap-2"><span class="chip">校园</span> <span class="chip">神话</span> <span class="chip">反叛</span></div>
+      </div>
+    </a>
+    <a href="movie-0456.html" class="group block overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl">
+      
+    <div class="movie-poster movie-poster-sm" style="--c1:hsl(57 86% 62%);--c2:hsl(95 80% 48%);--c3:hsl(237 72% 28%);--c4:hsl(337 78% 55%);">
+      <div class="poster-glow"></div>
+      <div class="poster-content">
+        <div class="poster-letter">虹色</div>
+        <div class="poster-meta">2016</div>
+        <div class="poster-title">虹色时光</div>
+      </div>
+    </div>
+      <div class="p-5">
+        <div class="mb-2 flex items-center justify-between gap-3 text-xs text-slate-500">
+          <span>动画剧集</span>
+          <span>日本</span>
+        </div>
+        <h3 class="line-clamp-1 text-lg font-semibold text-slate-900 group-hover:text-blue-600">虹色时光</h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600 line-clamp-3">四个性格迥异的男高中生的日常,有恋爱、有糗事、有吵架,但醒来后还是死党。</p>
+        <div class="mt-4 flex flex-wrap gap-2"><span class="chip">男子高中生</span> <span class="chip">友情</span> <span class="chip">纯爱</span></div>
+      </div>
+    </a>
+    <a href="movie-0251.html" class="group block overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl">
+      
+    <div class="movie-poster movie-poster-sm" style="--c1:hsl(180 86% 62%);--c2:hsl(218 80% 48%);--c3:hsl(0 72% 28%);--c4:hsl(100 78% 55%);">
+      <div class="poster-glow"></div>
+      <div class="poster-content">
+        <div class="poster-letter">大块</div>
+        <div class="poster-meta">2026</div>
+        <div class="poster-title">大块头有大智慧粤语</div>
+      </div>
+    </div>
+      <div class="p-5">
+        <div class="mb-2 flex items-center justify-between gap-3 text-xs text-slate-500">
+          <span>电影</span>
+          <span>中国香港</span>
+        </div>
+        <h3 class="line-clamp-1 text-lg font-semibold text-slate-900 group-hover:text-blue-600">大块头有大智慧粤语</h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600 line-clamp-3">一个失忆的肌肉壮汉流落深水埗,他随手的“拆楼”行为被街坊当成疯癫,实则每一下都是失传的古拳法。</p>
+        <div class="mt-4 flex flex-wrap gap-2"><span class="chip">粤语原声</span> <span class="chip">失忆保镖</span> <span class="chip">功夫哲学</span></div>
+      </div>
+    </a>
+    <a href="movie-0124.html" class="group block overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl">
+      
+    <div class="movie-poster movie-poster-sm" style="--c1:hsl(148 86% 62%);--c2:hsl(186 80% 48%);--c3:hsl(328 72% 28%);--c4:hsl(68 78% 55%);">
+      <div class="poster-glow"></div>
+      <div class="poster-content">
+        <div class="poster-letter">网约</div>
+        <div class="poster-meta">2024</div>
+        <div class="poster-title">网约车司机</div>
+      </div>
+    </div>
+      <div class="p-5">
+        <div class="mb-2 flex items-center justify-between gap-3 text-xs text-slate-500">
+          <span>电影</span>
+          <span>中国大陆</span>
+        </div>
+        <h3 class="line-clamp-1 text-lg font-semibold text-slate-900 group-hover:text-blue-600">网约车司机</h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600 line-clamp-3">一名下岗工人开网约车谋生,一夜之间接到四位神秘拼车客,每个人都与一桩失踪案有关。</p>
+        <div class="mt-4 flex flex-wrap gap-2"><span class="chip">城市夜行</span> <span class="chip">拼车奇遇</span> <span class="chip">反转叙事</span></div>
+      </div>
+    </a>
+    <a href="movie-0495.html" class="group block overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl">
+      
+    <div class="movie-poster movie-poster-sm" style="--c1:hsl(251 86% 62%);--c2:hsl(289 80% 48%);--c3:hsl(71 72% 28%);--c4:hsl(171 78% 55%);">
+      <div class="poster-glow"></div>
+      <div class="poster-content">
+        <div class="poster-letter">人生</div>
+        <div class="poster-meta">2025</div>
+        <div class="poster-title">人生切割术第二季</div>
+      </div>
+    </div>
+      <div class="p-5">
+        <div class="mb-2 flex items-center justify-between gap-3 text-xs text-slate-500">
+          <span>剧集</span>
+          <span>美国</span>
+        </div>
+        <h3 class="line-clamp-1 text-lg font-semibold text-slate-900 group-hover:text-blue-600">人生切割术第二季</h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600 line-clamp-3">工作人格”成功逃出卢蒙大楼后,发现外面的自己早在三年前就已经死了。</p>
+        <div class="mt-4 flex flex-wrap gap-2"><span class="chip">记忆分离</span> <span class="chip">职场恐怖</span> <span class="chip">伦理困境</span></div>
+      </div>
+    </a>
+    <a href="movie-0225.html" class="group block overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl">
+      
+    <div class="movie-poster movie-poster-sm" style="--c1:hsl(132 86% 62%);--c2:hsl(170 80% 48%);--c3:hsl(312 72% 28%);--c4:hsl(52 78% 55%);">
+      <div class="poster-glow"></div>
+      <div class="poster-content">
+        <div class="poster-letter">安静</div>
+        <div class="poster-meta">2026</div>
+        <div class="poster-title">安静</div>
+      </div>
+    </div>
+      <div class="p-5">
+        <div class="mb-2 flex items-center justify-between gap-3 text-xs text-slate-500">
+          <span>电影</span>
+          <span>韩国</span>
+        </div>
+        <h3 class="line-clamp-1 text-lg font-semibold text-slate-900 group-hover:text-blue-600">安静</h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600 line-clamp-3">一群人在废弃地下掩体中躲避未知声敏怪物,却因一个婴儿的啼哭陷入绝望。</p>
+        <div class="mt-4 flex flex-wrap gap-2"><span class="chip">无声</span> <span class="chip">怪物</span> <span class="chip">密室</span></div>
+      </div>
+    </a>
+    <a href="movie-0394.html" class="group block overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl">
+      
+    <div class="movie-poster movie-poster-sm" style="--c1:hsl(198 86% 62%);--c2:hsl(236 80% 48%);--c3:hsl(18 72% 28%);--c4:hsl(118 78% 55%);">
+      <div class="poster-glow"></div>
+      <div class="poster-content">
+        <div class="poster-letter">情陷</div>
+        <div class="poster-meta">2026</div>
+        <div class="poster-title">情陷红磨坊</div>
+      </div>
+    </div>
+      <div class="p-5">
+        <div class="mb-2 flex items-center justify-between gap-3 text-xs text-slate-500">
+          <span>电影</span>
+          <span>法国</span>
+        </div>
+        <h3 class="line-clamp-1 text-lg font-semibold text-slate-900 group-hover:text-blue-600">情陷红磨坊</h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600 line-clamp-3">1900年巴黎,一个患肺结核的康康舞女郎与一个贫苦作曲家相爱,她隐瞒病情为他争取登台机会。</p>
+        <div class="mt-4 flex flex-wrap gap-2"><span class="chip">康康舞</span> <span class="chip">悲剧美学</span> <span class="chip">诗人</span></div>
+      </div>
+    </a>
+    <a href="movie-0352.html" class="group block overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl">
+      
+    <div class="movie-poster movie-poster-sm" style="--c1:hsl(104 86% 62%);--c2:hsl(142 80% 48%);--c3:hsl(284 72% 28%);--c4:hsl(24 78% 55%);">
+      <div class="poster-glow"></div>
+      <div class="poster-content">
+        <div class="poster-letter">战神</div>
+        <div class="poster-meta">2026</div>
+        <div class="poster-title">战神传说:奥德赛</div>
+      </div>
+    </div>
+      <div class="p-5">
+        <div class="mb-2 flex items-center justify-between gap-3 text-xs text-slate-500">
+          <span>电影</span>
+          <span>美国</span>
+        </div>
+        <h3 class="line-clamp-1 text-lg font-semibold text-slate-900 group-hover:text-blue-600">战神传说:奥德赛</h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600 line-clamp-3">一名被诸神背叛的斯巴达战士发誓杀上奥林匹斯山,每杀死一位神,他就获得该神的力量,也继承其诅咒。</p>
+        <div class="mt-4 flex flex-wrap gap-2"><span class="chip">希腊神话</span> <span class="chip">复仇</span> <span class="chip">弑神</span></div>
+      </div>
+    </a>
+    <a href="movie-0325.html" class="group block overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl">
+      
+    <div class="movie-poster movie-poster-sm" style="--c1:hsl(244 86% 62%);--c2:hsl(282 80% 48%);--c3:hsl(64 72% 28%);--c4:hsl(164 78% 55%);">
+      <div class="poster-glow"></div>
+      <div class="poster-content">
+        <div class="poster-letter">无怨</div>
+        <div class="poster-meta">2026</div>
+        <div class="poster-title">无怨无悔</div>
+      </div>
+    </div>
+      <div class="p-5">
+        <div class="mb-2 flex items-center justify-between gap-3 text-xs text-slate-500">
+          <span>电影</span>
+          <span>中国大陆</span>
+        </div>
+        <h3 class="line-clamp-1 text-lg font-semibold text-slate-900 group-hover:text-blue-600">无怨无悔</h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600 line-clamp-3">父亲确诊阿尔茨海默症后,一对多年不和的兄弟不得不回到老家,共同面对遗忘与和解。</p>
+        <div class="mt-4 flex flex-wrap gap-2"><span class="chip">养老</span> <span class="chip">代际冲突</span> <span class="chip">东北工业城</span></div>
+      </div>
+    </a>
+    <a href="movie-0408.html" class="group block overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl">
+      
+    <div class="movie-poster movie-poster-sm" style="--c1:hsl(170 86% 62%);--c2:hsl(208 80% 48%);--c3:hsl(350 72% 28%);--c4:hsl(90 78% 55%);">
+      <div class="poster-glow"></div>
+      <div class="poster-content">
+        <div class="poster-letter">老大</div>
+        <div class="poster-meta">2026</div>
+        <div class="poster-title">老大冻未条</div>
+      </div>
+    </div>
+      <div class="p-5">
+        <div class="mb-2 flex items-center justify-between gap-3 text-xs text-slate-500">
+          <span>电影</span>
+          <span>中国台湾</span>
+        </div>
+        <h3 class="line-clamp-1 text-lg font-semibold text-slate-900 group-hover:text-blue-600">老大冻未条</h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600 line-clamp-3">黑帮老大突然得了“无法动弹”的怪病,手下竟将他抬上轮椅,照常收租砍人。</p>
+        <div class="mt-4 flex flex-wrap gap-2"><span class="chip">黑帮</span> <span class="chip">中年危机</span> <span class="chip">荒谬</span></div>
+      </div>
+    </a>
+    <a href="movie-0264.html" class="group block overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl">
+      
+    <div class="movie-poster movie-poster-sm" style="--c1:hsl(134 86% 62%);--c2:hsl(172 80% 48%);--c3:hsl(314 72% 28%);--c4:hsl(54 78% 55%);">
+      <div class="poster-glow"></div>
+      <div class="poster-content">
+        <div class="poster-letter">遥远</div>
+        <div class="poster-meta">2026</div>
+        <div class="poster-title">遥远的婚约</div>
+      </div>
+    </div>
+      <div class="p-5">
+        <div class="mb-2 flex items-center justify-between gap-3 text-xs text-slate-500">
+          <span>电影</span>
+          <span>中国大陆</span>
+        </div>
+        <h3 class="line-clamp-1 text-lg font-semibold text-slate-900 group-hover:text-blue-600">遥远的婚约</h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600 line-clamp-3">1977年,知青刘思远在返城前夜与农村女友定下婚约,然而一场洪水让他失忆,再次醒来已是四十年后。</p>
+        <div class="mt-4 flex flex-wrap gap-2"><span class="chip">知青</span> <span class="chip">下乡</span> <span class="chip">等待</span></div>
+      </div>
+    </a>
+    <a href="movie-0347.html" class="group block overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl">
+      
+    <div class="movie-poster movie-poster-sm" style="--c1:hsl(337 86% 62%);--c2:hsl(15 80% 48%);--c3:hsl(157 72% 28%);--c4:hsl(257 78% 55%);">
+      <div class="poster-glow"></div>
+      <div class="poster-content">
+        <div class="poster-letter">咖非</div>
+        <div class="poster-meta">2024</div>
+        <div class="poster-title">咖非正义</div>
+      </div>
+    </div>
+      <div class="p-5">
+        <div class="mb-2 flex items-center justify-between gap-3 text-xs text-slate-500">
+          <span>剧集</span>
+          <span>中国台湾</span>
+        </div>
+        <h3 class="line-clamp-1 text-lg font-semibold text-slate-900 group-hover:text-blue-600">咖非正义</h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600 line-clamp-3">一名死囚的辩护律师,在喝完一杯特调咖啡后,发现自己与冷酷无情的检察官交换了身体。</p>
+        <div class="mt-4 flex flex-wrap gap-2"><span class="chip">咖啡</span> <span class="chip">律政</span> <span class="chip">下毒</span></div>
+      </div>
+    </a>
+    <a href="movie-0078.html" class="group block overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl">
+      
+    <div class="movie-poster movie-poster-sm" style="--c1:hsl(206 86% 62%);--c2:hsl(244 80% 48%);--c3:hsl(26 72% 28%);--c4:hsl(126 78% 55%);">
+      <div class="poster-glow"></div>
+      <div class="poster-content">
+        <div class="poster-letter">污物</div>
+        <div class="poster-meta">2025</div>
+        <div class="poster-title">污物</div>
+      </div>
+    </div>
+      <div class="p-5">
+        <div class="mb-2 flex items-center justify-between gap-3 text-xs text-slate-500">
+          <span>动画电影</span>
+          <span>日本</span>
+        </div>
+        <h3 class="line-clamp-1 text-lg font-semibold text-slate-900 group-hover:text-blue-600">污物</h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600 line-clamp-3">在未来城市,人类的所有“污物”——嫉妒、仇恨、悲伤会被抽取制成燃料,但抽取后的人会变成只会微笑的空壳。</p>
+        <div class="mt-4 flex flex-wrap gap-2"><span class="chip">人体改造</span> <span class="chip">赛博朋克</span> <span class="chip">垃圾处理</span></div>
+      </div>
+    </a>
+    <a href="movie-0191.html" class="group block overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl">
+      
+    <div class="movie-poster movie-poster-sm" style="--c1:hsl(260 86% 62%);--c2:hsl(298 80% 48%);--c3:hsl(80 72% 28%);--c4:hsl(180 78% 55%);">
+      <div class="poster-glow"></div>
+      <div class="poster-content">
+        <div class="poster-letter">狐狸</div>
+        <div class="poster-meta">2027</div>
+        <div class="poster-title">狐狸猎手</div>
+      </div>
+    </div>
+      <div class="p-5">
+        <div class="mb-2 flex items-center justify-between gap-3 text-xs text-slate-500">
+          <span>电影</span>
+          <span>中国大陆</span>
+        </div>
+        <h3 class="line-clamp-1 text-lg font-semibold text-slate-900 group-hover:text-blue-600">狐狸猎手</h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600 line-clamp-3">1998 年东北小镇,一名老刑警追捕专杀骗子的连环杀手,却发现所有线索都指向自己失踪的儿子。</p>
+        <div class="mt-4 flex flex-wrap gap-2"><span class="chip">下岗潮</span> <span class="chip">连环杀手</span> <span class="chip">冰雪意象</span></div>
+      </div>
+    </a>
+    <a href="movie-0890.html" class="group block overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl">
+      
+    <div class="movie-poster movie-poster-sm" style="--c1:hsl(59 86% 62%);--c2:hsl(97 80% 48%);--c3:hsl(239 72% 28%);--c4:hsl(339 78% 55%);">
+      <div class="poster-glow"></div>
+      <div class="poster-content">
+        <div class="poster-letter">开心</div>
+        <div class="poster-meta">2024</div>
+        <div class="poster-title">开心汉堡店第四季</div>
+      </div>
+    </div>
+      <div class="p-5">
+        <div class="mb-2 flex items-center justify-between gap-3 text-xs text-slate-500">
+          <span>剧集</span>
+          <span>美国</span>
+        </div>
+        <h3 class="line-clamp-1 text-lg font-semibold text-slate-900 group-hover:text-blue-600">开心汉堡店第四季</h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600 line-clamp-3">汉堡店遭受米其林神秘评审员突击检查,全店员工用最奇葩的方式试图“装”成高级餐厅。</p>
+        <div class="mt-4 flex flex-wrap gap-2"><span class="chip">职场</span> <span class="chip">日常</span> <span class="chip">无厘头</span></div>
+      </div>
+    </a>
+    <a href="movie-0228.html" class="group block overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl">
+      
+    <div class="movie-poster movie-poster-sm" style="--c1:hsl(160 86% 62%);--c2:hsl(198 80% 48%);--c3:hsl(340 72% 28%);--c4:hsl(80 78% 55%);">
+      <div class="poster-glow"></div>
+      <div class="poster-content">
+        <div class="poster-letter">你带</div>
+        <div class="poster-meta">2026</div>
+        <div class="poster-title">你带我走</div>
+      </div>
+    </div>
+      <div class="p-5">
+        <div class="mb-2 flex items-center justify-between gap-3 text-xs text-slate-500">
+          <span>电影</span>
+          <span>韩国</span>
+        </div>
+        <h3 class="line-clamp-1 text-lg font-semibold text-slate-900 group-hover:text-blue-600">你带我走</h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600 line-clamp-3">绝症女孩和失语少年驾一辆偷来的车逃往济州岛,身后是两对崩溃的父母和一只警犬。</p>
+        <div class="mt-4 flex flex-wrap gap-2"><span class="chip">绝症</span> <span class="chip">逃亡</span> <span class="chip">济州岛</span></div>
+      </div>
+    </a>
+    <a href="movie-0425.html" class="group block overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl">
+      
+    <div class="movie-poster movie-poster-sm" style="--c1:hsl(314 86% 62%);--c2:hsl(352 80% 48%);--c3:hsl(134 72% 28%);--c4:hsl(234 78% 55%);">
+      <div class="poster-glow"></div>
+      <div class="poster-content">
+        <div class="poster-letter">异兽</div>
+        <div class="poster-meta">2026</div>
+        <div class="poster-title">异兽战场</div>
+      </div>
+    </div>
+      <div class="p-5">
+        <div class="mb-2 flex items-center justify-between gap-3 text-xs text-slate-500">
+          <span>电影</span>
+          <span>美国</span>
+        </div>
+        <h3 class="line-clamp-1 text-lg font-semibold text-slate-900 group-hover:text-blue-600">异兽战场</h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600 line-clamp-3">末日后的地球被巨型异兽统治,一对失散的兄弟,一个成了顶尖猎人,一个成了异兽驯化师,在战场上重逢。</p>
+        <div class="mt-4 flex flex-wrap gap-2"><span class="chip">怪兽</span> <span class="chip">机甲</span> <span class="chip">末日废土</span></div>
+      </div>
+    </a>
+    <a href="movie-0399.html" class="group block overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl">
+      
+    <div class="movie-poster movie-poster-sm" style="--c1:hsl(270 86% 62%);--c2:hsl(308 80% 48%);--c3:hsl(90 72% 28%);--c4:hsl(190 78% 55%);">
+      <div class="poster-glow"></div>
+      <div class="poster-content">
+        <div class="poster-letter">超级</div>
+        <div class="poster-meta">2026</div>
+        <div class="poster-title">超级明星金·卡戴珊</div>
+      </div>
+    </div>
+      <div class="p-5">
+        <div class="mb-2 flex items-center justify-between gap-3 text-xs text-slate-500">
+          <span>电影</span>
+          <span>美国</span>
+        </div>
+        <h3 class="line-clamp-1 text-lg font-semibold text-slate-900 group-hover:text-blue-600">超级明星金·卡戴珊</h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600 line-clamp-3">一部“自传式”伪纪录片,金·卡戴珊亲自扮演自己,但剧情虚构了她决定竞选总统的疯狂 30 天。</p>
+        <div class="mt-4 flex flex-wrap gap-2"><span class="chip">名人</span> <span class="chip">荒诞</span> <span class="chip">娱乐圈</span></div>
+      </div>
+    </a>
+    <a href="movie-0321.html" class="group block overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl">
+      
+    <div class="movie-poster movie-poster-sm" style="--c1:hsl(330 86% 62%);--c2:hsl(8 80% 48%);--c3:hsl(150 72% 28%);--c4:hsl(250 78% 55%);">
+      <div class="poster-glow"></div>
+      <div class="poster-content">
+        <div class="poster-letter">可不</div>
+        <div class="poster-meta">2024</div>
+        <div class="poster-title">可不可以你也刚好喜欢我</div>
+      </div>
+    </div>
+      <div class="p-5">
+        <div class="mb-2 flex items-center justify-between gap-3 text-xs text-slate-500">
+          <span>电影</span>
+          <span>中国台湾</span>
+        </div>
+        <h3 class="line-clamp-1 text-lg font-semibold text-slate-900 group-hover:text-blue-600">可不可以你也刚好喜欢我</h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600 line-clamp-3">大学图书馆里,两个陌生人用同一本书里的纸条交流了四年,却从未见过对方。</p>
+        <div class="mt-4 flex flex-wrap gap-2"><span class="chip">暗恋</span> <span class="chip">图书馆</span> <span class="chip">纸条</span></div>
+      </div>
+    </a>
+    <a href="movie-0481.html" class="group block overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl">
+      
+    <div class="movie-poster movie-poster-sm" style="--c1:hsl(304 86% 62%);--c2:hsl(342 80% 48%);--c3:hsl(124 72% 28%);--c4:hsl(224 78% 55%);">
+      <div class="poster-glow"></div>
+      <div class="poster-content">
+        <div class="poster-letter">甜蜜</div>
+        <div class="poster-meta">2025</div>
+        <div class="poster-title">甜蜜的咒诅</div>
+      </div>
+    </div>
+      <div class="p-5">
+        <div class="mb-2 flex items-center justify-between gap-3 text-xs text-slate-500">
+          <span>剧集</span>
+          <span>泰国</span>
+        </div>
+        <h3 class="line-clamp-1 text-lg font-semibold text-slate-900 group-hover:text-blue-600">甜蜜的咒诅</h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600 line-clamp-3">天才甜品师受到诅咒:只要她做的甜品让人尝到幸福的味道,对方就会在一周内遭遇血光之灾。</p>
+        <div class="mt-4 flex flex-wrap gap-2"><span class="chip">泰式浪漫</span> <span class="chip">前世今生</span> <span class="chip">甜品</span></div>
+      </div>
+    </a>
+    <a href="movie-0473.html" class="group block overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl">
+      
+    <div class="movie-poster movie-poster-sm" style="--c1:hsl(77 86% 62%);--c2:hsl(115 80% 48%);--c3:hsl(257 72% 28%);--c4:hsl(357 78% 55%);">
+      <div class="poster-glow"></div>
+      <div class="poster-content">
+        <div class="poster-letter">神机</div>
+        <div class="poster-meta">2026</div>
+        <div class="poster-title">神机有毛病</div>
+      </div>
+    </div>
+      <div class="p-5">
+        <div class="mb-2 flex items-center justify-between gap-3 text-xs text-slate-500">
+          <span>电影</span>
+          <span>韩国</span>
+        </div>
+        <h3 class="line-clamp-1 text-lg font-semibold text-slate-900 group-hover:text-blue-600">神机有毛病</h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600 line-clamp-3">母胎单身的程序员网购了一个AI娃娃,结果娃娃的操作系统是个暴躁的退伍军人大叔。</p>
+        <div class="mt-4 flex flex-wrap gap-2"><span class="chip">人工智能女友</span> <span class="chip">反向驯化</span> <span class="chip">宅男文化</span></div>
+      </div>
+    </a>
+    <a href="movie-0188.html" class="group block overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl">
+      
+    <div class="movie-poster movie-poster-sm" style="--c1:hsl(26 86% 62%);--c2:hsl(64 80% 48%);--c3:hsl(206 72% 28%);--c4:hsl(306 78% 55%);">
+      <div class="poster-glow"></div>
+      <div class="poster-content">
+        <div class="poster-letter">探索</div>
+        <div class="poster-meta">2025</div>
+        <div class="poster-title">探索黑暗</div>
+      </div>
+    </div>
+      <div class="p-5">
+        <div class="mb-2 flex items-center justify-between gap-3 text-xs text-slate-500">
+          <span>纪录片</span>
+          <span>美国/加拿大</span>
+        </div>
+        <h3 class="line-clamp-1 text-lg font-semibold text-slate-900 group-hover:text-blue-600">探索黑暗</h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600 line-clamp-3">全球最深的废弃金矿里,一群物理学家用二十年寻找宇宙中看不见的“暗物质”。</p>
+        <div class="mt-4 flex flex-wrap gap-2"><span class="chip">宇宙学</span> <span class="chip">暗物质</span> <span class="chip">粒子物理</span></div>
+      </div>
+    </a>
+    <a href="movie-0156.html" class="group block overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl">
+      
+    <div class="movie-poster movie-poster-sm" style="--c1:hsl(19 86% 62%);--c2:hsl(57 80% 48%);--c3:hsl(199 72% 28%);--c4:hsl(299 78% 55%);">
+      <div class="poster-glow"></div>
+      <div class="poster-content">
+        <div class="poster-letter">情陷</div>
+        <div class="poster-meta">2025</div>
+        <div class="poster-title">情陷百乐门</div>
+      </div>
+    </div>
+      <div class="p-5">
+        <div class="mb-2 flex items-center justify-between gap-3 text-xs text-slate-500">
+          <span>电影</span>
+          <span>中国香港</span>
+        </div>
+        <h3 class="line-clamp-1 text-lg font-semibold text-slate-900 group-hover:text-blue-600">情陷百乐门</h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600 line-clamp-3">1930年代的上海百乐门,一名歌女与两名舞客之间隐藏着一场刺杀汉奸的惊天计划。</p>
+        <div class="mt-4 flex flex-wrap gap-2"><span class="chip">民国</span> <span class="chip">舞厅</span> <span class="chip">卧底</span></div>
+      </div>
+    </a>
+    <a href="movie-0065.html" class="group block overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl">
+      
+    <div class="movie-poster movie-poster-sm" style="--c1:hsl(313 86% 62%);--c2:hsl(351 80% 48%);--c3:hsl(133 72% 28%);--c4:hsl(233 78% 55%);">
+      <div class="poster-glow"></div>
+      <div class="poster-content">
+        <div class="poster-letter">机器</div>
+        <div class="poster-meta">2026</div>
+        <div class="poster-title">机器战犬</div>
+      </div>
+    </div>
+      <div class="p-5">
+        <div class="mb-2 flex items-center justify-between gap-3 text-xs text-slate-500">
+          <span>电影</span>
+          <span>美国</span>
+        </div>
+        <h3 class="line-clamp-1 text-lg font-semibold text-slate-900 group-hover:text-blue-600">机器战犬</h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600 line-clamp-3">退役军犬改装成的实验性战斗机器走失后,被一个自闭症男孩捡到,一人一狗联手躲避军方追杀。</p>
+        <div class="mt-4 flex flex-wrap gap-2"><span class="chip">机甲狗</span> <span class="chip">反战</span> <span class="chip">人机情</span></div>
+      </div>
+    </a>
+    <a href="movie-0371.html" class="group block overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl">
+      
+    <div class="movie-poster movie-poster-sm" style="--c1:hsl(228 86% 62%);--c2:hsl(266 80% 48%);--c3:hsl(48 72% 28%);--c4:hsl(148 78% 55%);">
+      <div class="poster-glow"></div>
+      <div class="poster-content">
+        <div class="poster-letter">眠狂</div>
+        <div class="poster-meta">2026</div>
+        <div class="poster-title">眠狂四郎 圆月杀法</div>
+      </div>
+    </div>
+      <div class="p-5">
+        <div class="mb-2 flex items-center justify-between gap-3 text-xs text-slate-500">
+          <span>电影</span>
+          <span>日本</span>
+        </div>
+        <h3 class="line-clamp-1 text-lg font-semibold text-slate-900 group-hover:text-blue-600">眠狂四郎 圆月杀法</h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600 line-clamp-3">孤独剑客眠狂四郎被卷入一场涉及将军家秘宝的阴谋,他的“圆月杀法”将面对最可怕的敌人——自己的亲弟弟。</p>
+        <div class="mt-4 flex flex-wrap gap-2"><span class="chip">时代剧</span> <span class="chip">剑客</span> <span class="chip">复仇</span></div>
+      </div>
+    </a>
+    <a href="movie-0415.html" class="group block overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl">
+      
+    <div class="movie-poster movie-poster-sm" style="--c1:hsl(320 86% 62%);--c2:hsl(358 80% 48%);--c3:hsl(140 72% 28%);--c4:hsl(240 78% 55%);">
+      <div class="poster-glow"></div>
+      <div class="poster-content">
+        <div class="poster-letter">巅峰</div>
+        <div class="poster-meta">2026</div>
+        <div class="poster-title">巅峰拍档第四季</div>
+      </div>
+    </div>
+      <div class="p-5">
+        <div class="mb-2 flex items-center justify-between gap-3 text-xs text-slate-500">
+          <span>真人秀</span>
+          <span>英国</span>
+        </div>
+        <h3 class="line-clamp-1 text-lg font-semibold text-slate-900 group-hover:text-blue-600">巅峰拍档第四季</h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600 line-clamp-3">三位损友驾驶着三台报废的老爷车,试图穿越地球上最危险的无人区。</p>
+        <div class="mt-4 flex flex-wrap gap-2"><span class="chip">改装车</span> <span class="chip">环球挑战</span> <span class="chip">三贱客</span></div>
+      </div>
+    </a>
+    <a href="movie-0224.html" class="group block overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl">
+      
+    <div class="movie-poster movie-poster-sm" style="--c1:hsl(154 86% 62%);--c2:hsl(192 80% 48%);--c3:hsl(334 72% 28%);--c4:hsl(74 78% 55%);">
+      <div class="poster-glow"></div>
+      <div class="poster-content">
+        <div class="poster-letter">随风</div>
+        <div class="poster-meta">2026</div>
+        <div class="poster-title">随风而逝的记忆</div>
+      </div>
+    </div>
+      <div class="p-5">
+        <div class="mb-2 flex items-center justify-between gap-3 text-xs text-slate-500">
+          <span>电影</span>
+          <span>日本</span>
+        </div>
+        <h3 class="line-clamp-1 text-lg font-semibold text-slate-900 group-hover:text-blue-600">随风而逝的记忆</h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600 line-clamp-3">风吹走人的记忆,一个女孩每天醒来都要重新爱上同一个男孩。</p>
+        <div class="mt-4 flex flex-wrap gap-2"><span class="chip">失忆</span> <span class="chip">风</span> <span class="chip">照片</span></div>
+      </div>
+    </a>
+    <a href="movie-0412.html" class="group block overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl">
+      
+    <div class="movie-poster movie-poster-sm" style="--c1:hsl(182 86% 62%);--c2:hsl(220 80% 48%);--c3:hsl(2 72% 28%);--c4:hsl(102 78% 55%);">
+      <div class="poster-glow"></div>
+      <div class="poster-content">
+        <div class="poster-letter">横行</div>
+        <div class="poster-meta">2024</div>
+        <div class="poster-title">横行天下</div>
+      </div>
+    </div>
+      <div class="p-5">
+        <div class="mb-2 flex items-center justify-between gap-3 text-xs text-slate-500">
+          <span>电影</span>
+          <span>中国大陆</span>
+        </div>
+        <h3 class="line-clamp-1 text-lg font-semibold text-slate-900 group-hover:text-blue-600">横行天下</h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600 line-clamp-3">民国初年,最后一支女镖师队伍护送国宝穿越戈壁,遭多方势力围猎。</p>
+        <div class="mt-4 flex flex-wrap gap-2"><span class="chip">女镖师</span> <span class="chip">丝路</span> <span class="chip">冷兵器</span></div>
+      </div>
+    </a>
+    <a href="movie-0778.html" class="group block overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl">
+      
+    <div class="movie-poster movie-poster-sm" style="--c1:hsl(153 86% 62%);--c2:hsl(191 80% 48%);--c3:hsl(333 72% 28%);--c4:hsl(73 78% 55%);">
+      <div class="poster-glow"></div>
+      <div class="poster-content">
+        <div class="poster-letter">夺魂</div>
+        <div class="poster-meta">2027</div>
+        <div class="poster-title">夺魂锯6</div>
+      </div>
+    </div>
+      <div class="p-5">
+        <div class="mb-2 flex items-center justify-between gap-3 text-xs text-slate-500">
+          <span>电影</span>
+          <span>美国</span>
+        </div>
+        <h3 class="line-clamp-1 text-lg font-semibold text-slate-900 group-hover:text-blue-600">夺魂锯6</h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600 line-clamp-3">竖锯的最后一个门徒瞄准了制药公司老板,一场关于“求生欲”的药价游戏残酷开打。</p>
+        <div class="mt-4 flex flex-wrap gap-2"><span class="chip">密室逃脱</span> <span class="chip">血腥</span> <span class="chip">反转</span></div>
+      </div>
+    </a>
+    <a href="movie-0017.html" class="group block overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl">
+      
+    <div class="movie-poster movie-poster-sm" style="--c1:hsl(188 86% 62%);--c2:hsl(226 80% 48%);--c3:hsl(8 72% 28%);--c4:hsl(108 78% 55%);">
+      <div class="poster-glow"></div>
+      <div class="poster-content">
+        <div class="poster-letter">游击</div>
+        <div class="poster-meta">2026</div>
+        <div class="poster-title">游击恋爱</div>
+      </div>
+    </div>
+      <div class="p-5">
+        <div class="mb-2 flex items-center justify-between gap-3 text-xs text-slate-500">
+          <span>电影</span>
+          <span>菲律宾</span>
+        </div>
+        <h3 class="line-clamp-1 text-lg font-semibold text-slate-900 group-hover:text-blue-600">游击恋爱</h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600 line-clamp-3">1942年菲律宾丛林,抗日游击队长爱上俘虏的日本军医,两人必须在枪林弹雨中守护这段禁忌之恋。</p>
+        <div class="mt-4 flex flex-wrap gap-2"><span class="chip">游击队</span> <span class="chip">敌我之恋</span> <span class="chip">丛林</span></div>
+      </div>
+    </a>
+    <a href="movie-0271.html" class="group block overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl">
+      
+    <div class="movie-poster movie-poster-sm" style="--c1:hsl(305 86% 62%);--c2:hsl(343 80% 48%);--c3:hsl(125 72% 28%);--c4:hsl(225 78% 55%);">
+      <div class="poster-glow"></div>
+      <div class="poster-content">
+        <div class="poster-letter">贩卖</div>
+        <div class="poster-meta">2026</div>
+        <div class="poster-title">贩卖法术的杂货铺</div>
+      </div>
+    </div>
+      <div class="p-5">
+        <div class="mb-2 flex items-center justify-between gap-3 text-xs text-slate-500">
+          <span>剧集</span>
+          <span>中国大陆</span>
+        </div>
+        <h3 class="line-clamp-1 text-lg font-semibold text-slate-900 group-hover:text-blue-600">贩卖法术的杂货铺</h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600 line-clamp-3">社畜误闯神秘杂货铺,用法术交易为客人实现愿望,代价却是自己的阳寿。</p>
+        <div class="mt-4 flex flex-wrap gap-2"><span class="chip">单元剧</span> <span class="chip">法术交易</span> <span class="chip">人性</span></div>
+      </div>
+    </a>
+    <a href="movie-0359.html" class="group block overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl">
+      
+    <div class="movie-poster movie-poster-sm" style="--c1:hsl(4 86% 62%);--c2:hsl(42 80% 48%);--c3:hsl(184 72% 28%);--c4:hsl(284 78% 55%);">
+      <div class="poster-glow"></div>
+      <div class="poster-content">
+        <div class="poster-letter">又见</div>
+        <div class="poster-meta">2026</div>
+        <div class="poster-title">又见冤家</div>
+      </div>
+    </div>
+      <div class="p-5">
+        <div class="mb-2 flex items-center justify-between gap-3 text-xs text-slate-500">
+          <span>电视剧</span>
+          <span>中国</span>
+        </div>
+        <h3 class="line-clamp-1 text-lg font-semibold text-slate-900 group-hover:text-blue-600">又见冤家</h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600 line-clamp-3">斗了二十年的婆媳一朝穿越回各自青春时代,竟被迫以闺蜜身份同吃同住。</p>
+        <div class="mt-4 flex flex-wrap gap-2"><span class="chip">婆媳</span> <span class="chip">反转</span> <span class="chip">温情喜剧</span></div>
+      </div>
+    </a>
+    <a href="movie-0349.html" class="group block overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl">
+      
+    <div class="movie-poster movie-poster-sm" style="--c1:hsl(157 86% 62%);--c2:hsl(195 80% 48%);--c3:hsl(337 72% 28%);--c4:hsl(77 78% 55%);">
+      <div class="poster-glow"></div>
+      <div class="poster-content">
+        <div class="poster-letter">约翰</div>
+        <div class="poster-meta">2026</div>
+        <div class="poster-title">约翰·卡朋特的郊区尖叫</div>
+      </div>
+    </div>
+      <div class="p-5">
+        <div class="mb-2 flex items-center justify-between gap-3 text-xs text-slate-500">
+          <span>电影</span>
+          <span>美国</span>
+        </div>
+        <h3 class="line-clamp-1 text-lg font-semibold text-slate-900 group-hover:text-blue-600">约翰·卡朋特的郊区尖叫</h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600 line-clamp-3">美国中产家庭发现,自家完美邻居们都是邪教成员,而新搬来的主角一家正是献祭对象。</p>
+        <div class="mt-4 flex flex-wrap gap-2"><span class="chip">邪教</span> <span class="chip">郊区</span> <span class="chip">邻居</span></div>
+      </div>
+    </a></div>
+      </div>
+    </section>
+    
+  </main>
+  <footer class="border-t border-slate-200 bg-slate-950 text-slate-300">
+    <div class="mx-auto grid max-w-7xl gap-8 px-4 py-12 sm:px-6 lg:grid-cols-4 lg:px-8">
+      <div class="lg:col-span-2">
+        <div class="mb-4 flex items-center gap-3">
+          <div class="logo-mark logo-mark-dark">影</div>
+          <div>
+            <div class="text-xl font-bold text-white">影讯档案</div>
+            <div class="text-sm text-slate-400">完整收录 2000 部影片条目</div>
+          </div>
+        </div>
+        <p class="max-w-xl text-sm leading-7 text-slate-400">本站为纯静态结构，所有核心影片信息均直接写入 HTML 页面，便于检索、浏览与二次部署。</p>
+      </div>
+      <div>
+        <div class="mb-4 text-sm font-semibold text-white">导航</div>
+        <div class="space-y-2 text-sm">
+          <a class="block hover:text-white" href="index.html">首页</a>
+          <a class="block hover:text-white" href="ranking.html">榜单</a>
+          <a class="block hover:text-white" href="search.html">搜索</a>
+          <a class="block hover:text-white" href="browse.html">分类</a>
+        </div>
+      </div>
+      <div>
+        <div class="mb-4 text-sm font-semibold text-white">数据</div>
+        <div class="space-y-2 text-sm text-slate-400">
+          <div>影片总数：2000</div>
+          <div>页面类型：首页 / 榜单 / 搜索 / 分类 / 详情</div>
+          <div>输出格式：纯静态 HTML</div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?76b5e2e0f6c84c06f0a7cb7105df054d";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+  <script src="assets/site.js"></script>
+</body>
+</html>
